@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:15
+    container_name: Team-Builder-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: Team-Builder-Poke-DB
+      POSTGRES_USER: Vtor27
+      POSTGRES_PASSWORD: teambuilderpoke
+    ports:
+      - "5432:5432"
+    volumes:
+      - pokedex-data:/var/lib/postgresql/data
+
+volumes:
+  pokedex-data:

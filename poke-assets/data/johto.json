@@ -1,0 +1,2251 @@
+[
+    {
+        "id": 152,
+        "name": {
+            "english": "Chikorita",
+            "japanese": "チコリータ",
+            "chinese": "菊草叶",
+            "french": "Germignon"
+        },
+        "type": [
+            "Grass"
+        ],
+        "base": {
+            "HP": 45,
+            "Attack": 49,
+            "Defense": 65,
+            "Sp. Attack": 49,
+            "Sp. Defense": 65,
+            "Speed": 45
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/152.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/152MS.png"
+    },
+    {
+        "id": 153,
+        "name": {
+            "english": "Bayleef",
+            "japanese": "ベイリーフ",
+            "chinese": "月桂叶",
+            "french": "Macronium"
+        },
+        "type": [
+            "Grass"
+        ],
+        "base": {
+            "HP": 60,
+            "Attack": 62,
+            "Defense": 80,
+            "Sp. Attack": 63,
+            "Sp. Defense": 80,
+            "Speed": 60
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/153.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/153MS.png"
+    },
+    {
+        "id": 154,
+        "name": {
+            "english": "Meganium",
+            "japanese": "メガニウム",
+            "chinese": "大竺葵",
+            "french": "Méganium"
+        },
+        "type": [
+            "Grass"
+        ],
+        "base": {
+            "HP": 80,
+            "Attack": 82,
+            "Defense": 100,
+            "Sp. Attack": 83,
+            "Sp. Defense": 100,
+            "Speed": 80
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/154.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/154MS.png"
+    },
+    {
+        "id": 155,
+        "name": {
+            "english": "Cyndaquil",
+            "japanese": "ヒノアラシ",
+            "chinese": "火球鼠",
+            "french": "Héricendre"
+        },
+        "type": [
+            "Fire"
+        ],
+        "base": {
+            "HP": 39,
+            "Attack": 52,
+            "Defense": 43,
+            "Sp. Attack": 60,
+            "Sp. Defense": 50,
+            "Speed": 65
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/155.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/155MS.png"
+    },
+    {
+        "id": 156,
+        "name": {
+            "english": "Quilava",
+            "japanese": "マグマラシ",
+            "chinese": "火岩鼠",
+            "french": "Feurisson"
+        },
+        "type": [
+            "Fire"
+        ],
+        "base": {
+            "HP": 58,
+            "Attack": 64,
+            "Defense": 58,
+            "Sp. Attack": 80,
+            "Sp. Defense": 65,
+            "Speed": 80
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/156.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/156MS.png"
+    },
+    {
+        "id": 157,
+        "name": {
+            "english": "Typhlosion",
+            "japanese": "バクフーン",
+            "chinese": "火暴兽",
+            "french": "Typhlosion"
+        },
+        "type": [
+            "Fire"
+        ],
+        "base": {
+            "HP": 78,
+            "Attack": 84,
+            "Defense": 78,
+            "Sp. Attack": 109,
+            "Sp. Defense": 85,
+            "Speed": 100
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/157.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/157MS.png"
+    },
+    {
+        "id": 158,
+        "name": {
+            "english": "Totodile",
+            "japanese": "ワニノコ",
+            "chinese": "小锯鳄",
+            "french": "Kaiminus"
+        },
+        "type": [
+            "Water"
+        ],
+        "base": {
+            "HP": 50,
+            "Attack": 65,
+            "Defense": 64,
+            "Sp. Attack": 44,
+            "Sp. Defense": 48,
+            "Speed": 43
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/158.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/158MS.png"
+    },
+    {
+        "id": 159,
+        "name": {
+            "english": "Croconaw",
+            "japanese": "アリゲイツ",
+            "chinese": "蓝鳄",
+            "french": "Crocrodil"
+        },
+        "type": [
+            "Water"
+        ],
+        "base": {
+            "HP": 65,
+            "Attack": 80,
+            "Defense": 80,
+            "Sp. Attack": 59,
+            "Sp. Defense": 63,
+            "Speed": 58
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/159.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/159MS.png"
+    },
+    {
+        "id": 160,
+        "name": {
+            "english": "Feraligatr",
+            "japanese": "オーダイル",
+            "chinese": "大力鳄",
+            "french": "Aligatueur"
+        },
+        "type": [
+            "Water"
+        ],
+        "base": {
+            "HP": 85,
+            "Attack": 105,
+            "Defense": 100,
+            "Sp. Attack": 79,
+            "Sp. Defense": 83,
+            "Speed": 78
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/160.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/160MS.png"
+    },
+    {
+        "id": 161,
+        "name": {
+            "english": "Sentret",
+            "japanese": "オタチ",
+            "chinese": "尾立",
+            "french": "Fouinette"
+        },
+        "type": [
+            "Normal"
+        ],
+        "base": {
+            "HP": 35,
+            "Attack": 46,
+            "Defense": 34,
+            "Sp. Attack": 35,
+            "Sp. Defense": 45,
+            "Speed": 20
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/161.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/161MS.png"
+    },
+    {
+        "id": 162,
+        "name": {
+            "english": "Furret",
+            "japanese": "オオタチ",
+            "chinese": "大尾立",
+            "french": "Fouinar"
+        },
+        "type": [
+            "Normal"
+        ],
+        "base": {
+            "HP": 85,
+            "Attack": 76,
+            "Defense": 64,
+            "Sp. Attack": 45,
+            "Sp. Defense": 55,
+            "Speed": 90
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/162.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/162MS.png"
+    },
+    {
+        "id": 163,
+        "name": {
+            "english": "Hoothoot",
+            "japanese": "ホーホー",
+            "chinese": "咕咕",
+            "french": "Hoothoot"
+        },
+        "type": [
+            "Normal",
+            "Flying"
+        ],
+        "base": {
+            "HP": 60,
+            "Attack": 30,
+            "Defense": 30,
+            "Sp. Attack": 36,
+            "Sp. Defense": 56,
+            "Speed": 50
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/163.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/163MS.png"
+    },
+    {
+        "id": 164,
+        "name": {
+            "english": "Noctowl",
+            "japanese": "ヨルノズク",
+            "chinese": "猫头夜鹰",
+            "french": "Noarfang"
+        },
+        "type": [
+            "Normal",
+            "Flying"
+        ],
+        "base": {
+            "HP": 100,
+            "Attack": 50,
+            "Defense": 50,
+            "Sp. Attack": 86,
+            "Sp. Defense": 96,
+            "Speed": 70
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/164.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/164MS.png"
+    },
+    {
+        "id": 165,
+        "name": {
+            "english": "Ledyba",
+            "japanese": "レディバ",
+            "chinese": "芭瓢虫",
+            "french": "Coxy"
+        },
+        "type": [
+            "Bug",
+            "Flying"
+        ],
+        "base": {
+            "HP": 40,
+            "Attack": 20,
+            "Defense": 30,
+            "Sp. Attack": 40,
+            "Sp. Defense": 80,
+            "Speed": 55
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/165.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/165MS.png"
+    },
+    {
+        "id": 166,
+        "name": {
+            "english": "Ledian",
+            "japanese": "レディアン",
+            "chinese": "安瓢虫",
+            "french": "Coxyclaque"
+        },
+        "type": [
+            "Bug",
+            "Flying"
+        ],
+        "base": {
+            "HP": 55,
+            "Attack": 35,
+            "Defense": 50,
+            "Sp. Attack": 55,
+            "Sp. Defense": 110,
+            "Speed": 85
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/166.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/166MS.png"
+    },
+    {
+        "id": 167,
+        "name": {
+            "english": "Spinarak",
+            "japanese": "イトマル",
+            "chinese": "圆丝蛛",
+            "french": "Mimigal"
+        },
+        "type": [
+            "Bug",
+            "Poison"
+        ],
+        "base": {
+            "HP": 40,
+            "Attack": 60,
+            "Defense": 40,
+            "Sp. Attack": 40,
+            "Sp. Defense": 40,
+            "Speed": 30
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/167.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/167MS.png"
+    },
+    {
+        "id": 168,
+        "name": {
+            "english": "Ariados",
+            "japanese": "アリアドス",
+            "chinese": "阿利多斯",
+            "french": "Migalos"
+        },
+        "type": [
+            "Bug",
+            "Poison"
+        ],
+        "base": {
+            "HP": 70,
+            "Attack": 90,
+            "Defense": 70,
+            "Sp. Attack": 60,
+            "Sp. Defense": 70,
+            "Speed": 40
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/168.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/168MS.png"
+    },
+    {
+        "id": 169,
+        "name": {
+            "english": "Crobat",
+            "japanese": "クロバット",
+            "chinese": "叉字蝠",
+            "french": "Nostenfer"
+        },
+        "type": [
+            "Poison",
+            "Flying"
+        ],
+        "base": {
+            "HP": 85,
+            "Attack": 90,
+            "Defense": 80,
+            "Sp. Attack": 70,
+            "Sp. Defense": 80,
+            "Speed": 130
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/169.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/169MS.png"
+    },
+    {
+        "id": 170,
+        "name": {
+            "english": "Chinchou",
+            "japanese": "チョンチー",
+            "chinese": "灯笼鱼",
+            "french": "Loupio"
+        },
+        "type": [
+            "Water",
+            "Electric"
+        ],
+        "base": {
+            "HP": 75,
+            "Attack": 38,
+            "Defense": 38,
+            "Sp. Attack": 56,
+            "Sp. Defense": 56,
+            "Speed": 67
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/170.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/170MS.png"
+    },
+    {
+        "id": 171,
+        "name": {
+            "english": "Lanturn",
+            "japanese": "ランターン",
+            "chinese": "电灯怪",
+            "french": "Lanturn"
+        },
+        "type": [
+            "Water",
+            "Electric"
+        ],
+        "base": {
+            "HP": 125,
+            "Attack": 58,
+            "Defense": 58,
+            "Sp. Attack": 76,
+            "Sp. Defense": 76,
+            "Speed": 67
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/171.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/171MS.png"
+    },
+    {
+        "id": 172,
+        "name": {
+            "english": "Pichu",
+            "japanese": "ピチュー",
+            "chinese": "皮丘",
+            "french": "Pichu"
+        },
+        "type": [
+            "Electric"
+        ],
+        "base": {
+            "HP": 20,
+            "Attack": 40,
+            "Defense": 15,
+            "Sp. Attack": 35,
+            "Sp. Defense": 35,
+            "Speed": 60
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/172.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/172MS.png"
+    },
+    {
+        "id": 173,
+        "name": {
+            "english": "Cleffa",
+            "japanese": "ピィ",
+            "chinese": "皮宝宝",
+            "french": "Mélo"
+        },
+        "type": [
+            "Fairy"
+        ],
+        "base": {
+            "HP": 50,
+            "Attack": 25,
+            "Defense": 28,
+            "Sp. Attack": 45,
+            "Sp. Defense": 55,
+            "Speed": 15
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/173.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/173MS.png"
+    },
+    {
+        "id": 174,
+        "name": {
+            "english": "Igglybuff",
+            "japanese": "ププリン",
+            "chinese": "宝宝丁",
+            "french": "Toudoudou"
+        },
+        "type": [
+            "Normal",
+            "Fairy"
+        ],
+        "base": {
+            "HP": 90,
+            "Attack": 30,
+            "Defense": 15,
+            "Sp. Attack": 40,
+            "Sp. Defense": 20,
+            "Speed": 15
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/174.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/174MS.png"
+    },
+    {
+        "id": 175,
+        "name": {
+            "english": "Togepi",
+            "japanese": "トゲピー",
+            "chinese": "波克比",
+            "french": "Togepi"
+        },
+        "type": [
+            "Fairy"
+        ],
+        "base": {
+            "HP": 35,
+            "Attack": 20,
+            "Defense": 65,
+            "Sp. Attack": 40,
+            "Sp. Defense": 65,
+            "Speed": 20
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/175.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/175MS.png"
+    },
+    {
+        "id": 176,
+        "name": {
+            "english": "Togetic",
+            "japanese": "トゲチック",
+            "chinese": "波克基古",
+            "french": "Togetic"
+        },
+        "type": [
+            "Fairy",
+            "Flying"
+        ],
+        "base": {
+            "HP": 55,
+            "Attack": 40,
+            "Defense": 85,
+            "Sp. Attack": 80,
+            "Sp. Defense": 105,
+            "Speed": 40
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/176.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/176MS.png"
+    },
+    {
+        "id": 177,
+        "name": {
+            "english": "Natu",
+            "japanese": "ネイティ",
+            "chinese": "天然雀",
+            "french": "Natu"
+        },
+        "type": [
+            "Psychic",
+            "Flying"
+        ],
+        "base": {
+            "HP": 40,
+            "Attack": 50,
+            "Defense": 45,
+            "Sp. Attack": 70,
+            "Sp. Defense": 45,
+            "Speed": 70
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/177.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/177MS.png"
+    },
+    {
+        "id": 178,
+        "name": {
+            "english": "Xatu",
+            "japanese": "ネイティオ",
+            "chinese": "天然鸟",
+            "french": "Xatu"
+        },
+        "type": [
+            "Psychic",
+            "Flying"
+        ],
+        "base": {
+            "HP": 65,
+            "Attack": 75,
+            "Defense": 70,
+            "Sp. Attack": 95,
+            "Sp. Defense": 70,
+            "Speed": 95
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/178.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/178MS.png"
+    },
+    {
+        "id": 179,
+        "name": {
+            "english": "Mareep",
+            "japanese": "メリープ",
+            "chinese": "咩利羊",
+            "french": "Wattouat"
+        },
+        "type": [
+            "Electric"
+        ],
+        "base": {
+            "HP": 55,
+            "Attack": 40,
+            "Defense": 40,
+            "Sp. Attack": 65,
+            "Sp. Defense": 45,
+            "Speed": 35
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/179.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/179MS.png"
+    },
+    {
+        "id": 180,
+        "name": {
+            "english": "Flaaffy",
+            "japanese": "モココ",
+            "chinese": "茸茸羊",
+            "french": "Lainergie"
+        },
+        "type": [
+            "Electric"
+        ],
+        "base": {
+            "HP": 70,
+            "Attack": 55,
+            "Defense": 55,
+            "Sp. Attack": 80,
+            "Sp. Defense": 60,
+            "Speed": 45
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/180.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/180MS.png"
+    },
+    {
+        "id": 181,
+        "name": {
+            "english": "Ampharos",
+            "japanese": "デンリュウ",
+            "chinese": "电龙",
+            "french": "Pharamp"
+        },
+        "type": [
+            "Electric"
+        ],
+        "base": {
+            "HP": 90,
+            "Attack": 75,
+            "Defense": 85,
+            "Sp. Attack": 115,
+            "Sp. Defense": 90,
+            "Speed": 55
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/181.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/181MS.png"
+    },
+    {
+        "id": 182,
+        "name": {
+            "english": "Bellossom",
+            "japanese": "キレイハナ",
+            "chinese": "美丽花",
+            "french": "Joliflor"
+        },
+        "type": [
+            "Grass"
+        ],
+        "base": {
+            "HP": 75,
+            "Attack": 80,
+            "Defense": 95,
+            "Sp. Attack": 90,
+            "Sp. Defense": 100,
+            "Speed": 50
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/182.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/182MS.png"
+    },
+    {
+        "id": 183,
+        "name": {
+            "english": "Marill",
+            "japanese": "マリル",
+            "chinese": "玛力露",
+            "french": "Marill"
+        },
+        "type": [
+            "Water",
+            "Fairy"
+        ],
+        "base": {
+            "HP": 70,
+            "Attack": 20,
+            "Defense": 50,
+            "Sp. Attack": 20,
+            "Sp. Defense": 50,
+            "Speed": 40
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/183.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/183MS.png"
+    },
+    {
+        "id": 184,
+        "name": {
+            "english": "Azumarill",
+            "japanese": "マリルリ",
+            "chinese": "玛力露丽",
+            "french": "Azumarill"
+        },
+        "type": [
+            "Water",
+            "Fairy"
+        ],
+        "base": {
+            "HP": 100,
+            "Attack": 50,
+            "Defense": 80,
+            "Sp. Attack": 60,
+            "Sp. Defense": 80,
+            "Speed": 50
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/184.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/184MS.png"
+    },
+    {
+        "id": 185,
+        "name": {
+            "english": "Sudowoodo",
+            "japanese": "ウソッキー",
+            "chinese": "树才怪‎",
+            "french": "Simularbre"
+        },
+        "type": [
+            "Rock"
+        ],
+        "base": {
+            "HP": 70,
+            "Attack": 100,
+            "Defense": 115,
+            "Sp. Attack": 30,
+            "Sp. Defense": 65,
+            "Speed": 30
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/185.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/185MS.png"
+    },
+    {
+        "id": 186,
+        "name": {
+            "english": "Politoed",
+            "japanese": "ニョロトノ",
+            "chinese": "蚊香蛙皇",
+            "french": "Tarpaud"
+        },
+        "type": [
+            "Water"
+        ],
+        "base": {
+            "HP": 90,
+            "Attack": 75,
+            "Defense": 75,
+            "Sp. Attack": 90,
+            "Sp. Defense": 100,
+            "Speed": 70
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/186.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/186MS.png"
+    },
+    {
+        "id": 187,
+        "name": {
+            "english": "Hoppip",
+            "japanese": "ハネッコ",
+            "chinese": "毽子草",
+            "french": "Granivol"
+        },
+        "type": [
+            "Grass",
+            "Flying"
+        ],
+        "base": {
+            "HP": 35,
+            "Attack": 35,
+            "Defense": 40,
+            "Sp. Attack": 35,
+            "Sp. Defense": 55,
+            "Speed": 50
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/187.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/187MS.png"
+    },
+    {
+        "id": 188,
+        "name": {
+            "english": "Skiploom",
+            "japanese": "ポポッコ",
+            "chinese": "毽子花",
+            "french": "Floravol"
+        },
+        "type": [
+            "Grass",
+            "Flying"
+        ],
+        "base": {
+            "HP": 55,
+            "Attack": 45,
+            "Defense": 50,
+            "Sp. Attack": 45,
+            "Sp. Defense": 65,
+            "Speed": 80
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/188.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/188MS.png"
+    },
+    {
+        "id": 189,
+        "name": {
+            "english": "Jumpluff",
+            "japanese": "ワタッコ",
+            "chinese": "毽子棉",
+            "french": "Cotovol"
+        },
+        "type": [
+            "Grass",
+            "Flying"
+        ],
+        "base": {
+            "HP": 75,
+            "Attack": 55,
+            "Defense": 70,
+            "Sp. Attack": 55,
+            "Sp. Defense": 95,
+            "Speed": 110
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/189.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/189MS.png"
+    },
+    {
+        "id": 190,
+        "name": {
+            "english": "Aipom",
+            "japanese": "エイパム",
+            "chinese": "长尾怪手",
+            "french": "Capumain"
+        },
+        "type": [
+            "Normal"
+        ],
+        "base": {
+            "HP": 55,
+            "Attack": 70,
+            "Defense": 55,
+            "Sp. Attack": 40,
+            "Sp. Defense": 55,
+            "Speed": 85
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/190.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/190MS.png"
+    },
+    {
+        "id": 191,
+        "name": {
+            "english": "Sunkern",
+            "japanese": "ヒマナッツ",
+            "chinese": "向日种子",
+            "french": "Tournegrin"
+        },
+        "type": [
+            "Grass"
+        ],
+        "base": {
+            "HP": 30,
+            "Attack": 30,
+            "Defense": 30,
+            "Sp. Attack": 30,
+            "Sp. Defense": 30,
+            "Speed": 30
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/191.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/191MS.png"
+    },
+    {
+        "id": 192,
+        "name": {
+            "english": "Sunflora",
+            "japanese": "キマワリ",
+            "chinese": "向日花怪",
+            "french": "Héliatronc"
+        },
+        "type": [
+            "Grass"
+        ],
+        "base": {
+            "HP": 75,
+            "Attack": 75,
+            "Defense": 55,
+            "Sp. Attack": 105,
+            "Sp. Defense": 85,
+            "Speed": 30
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/192.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/192MS.png"
+    },
+    {
+        "id": 193,
+        "name": {
+            "english": "Yanma",
+            "japanese": "ヤンヤンマ",
+            "chinese": "蜻蜻蜓",
+            "french": "Yanma"
+        },
+        "type": [
+            "Bug",
+            "Flying"
+        ],
+        "base": {
+            "HP": 65,
+            "Attack": 65,
+            "Defense": 45,
+            "Sp. Attack": 75,
+            "Sp. Defense": 45,
+            "Speed": 95
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/193.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/193MS.png"
+    },
+    {
+        "id": 194,
+        "name": {
+            "english": "Wooper",
+            "japanese": "ウパー",
+            "chinese": "乌波",
+            "french": "Axoloto"
+        },
+        "type": [
+            "Water",
+            "Ground"
+        ],
+        "base": {
+            "HP": 55,
+            "Attack": 45,
+            "Defense": 45,
+            "Sp. Attack": 25,
+            "Sp. Defense": 25,
+            "Speed": 15
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/194.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/194MS.png"
+    },
+    {
+        "id": 195,
+        "name": {
+            "english": "Quagsire",
+            "japanese": "ヌオー",
+            "chinese": "沼王",
+            "french": "Maraiste"
+        },
+        "type": [
+            "Water",
+            "Ground"
+        ],
+        "base": {
+            "HP": 95,
+            "Attack": 85,
+            "Defense": 85,
+            "Sp. Attack": 65,
+            "Sp. Defense": 65,
+            "Speed": 35
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/195.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/195MS.png"
+    },
+    {
+        "id": 196,
+        "name": {
+            "english": "Espeon",
+            "japanese": "エーフィ",
+            "chinese": "太阳伊布",
+            "french": "Mentali"
+        },
+        "type": [
+            "Psychic"
+        ],
+        "base": {
+            "HP": 65,
+            "Attack": 65,
+            "Defense": 60,
+            "Sp. Attack": 130,
+            "Sp. Defense": 95,
+            "Speed": 110
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/196.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/196MS.png"
+    },
+    {
+        "id": 197,
+        "name": {
+            "english": "Umbreon",
+            "japanese": "ブラッキー",
+            "chinese": "月亮伊布",
+            "french": "Noctali"
+        },
+        "type": [
+            "Dark"
+        ],
+        "base": {
+            "HP": 95,
+            "Attack": 65,
+            "Defense": 110,
+            "Sp. Attack": 60,
+            "Sp. Defense": 130,
+            "Speed": 65
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/197.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/197MS.png"
+    },
+    {
+        "id": 198,
+        "name": {
+            "english": "Murkrow",
+            "japanese": "ヤミカラス",
+            "chinese": "黑暗鸦",
+            "french": "Cornèbre"
+        },
+        "type": [
+            "Dark",
+            "Flying"
+        ],
+        "base": {
+            "HP": 60,
+            "Attack": 85,
+            "Defense": 42,
+            "Sp. Attack": 85,
+            "Sp. Defense": 42,
+            "Speed": 91
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/198.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/198MS.png"
+    },
+    {
+        "id": 199,
+        "name": {
+            "english": "Slowking",
+            "japanese": "ヤドキング",
+            "chinese": "呆呆王",
+            "french": "Roigada"
+        },
+        "type": [
+            "Water",
+            "Psychic"
+        ],
+        "base": {
+            "HP": 95,
+            "Attack": 75,
+            "Defense": 80,
+            "Sp. Attack": 100,
+            "Sp. Defense": 110,
+            "Speed": 30
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/199.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/199MS.png"
+    },
+    {
+        "id": 200,
+        "name": {
+            "english": "Misdreavus",
+            "japanese": "ムウマ",
+            "chinese": "梦妖",
+            "french": "Feuforêve"
+        },
+        "type": [
+            "Ghost"
+        ],
+        "base": {
+            "HP": 60,
+            "Attack": 60,
+            "Defense": 60,
+            "Sp. Attack": 85,
+            "Sp. Defense": 85,
+            "Speed": 85
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/200.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/200MS.png"
+    },
+    {
+        "id": 201,
+        "name": {
+            "english": "Unown",
+            "japanese": "アンノーン",
+            "chinese": "未知图腾",
+            "french": "Zarbi"
+        },
+        "type": [
+            "Psychic"
+        ],
+        "base": {
+            "HP": 48,
+            "Attack": 72,
+            "Defense": 48,
+            "Sp. Attack": 72,
+            "Sp. Defense": 48,
+            "Speed": 48
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/201.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/201MS.png"
+    },
+    {
+        "id": 202,
+        "name": {
+            "english": "Wobbuffet",
+            "japanese": "ソーナンス",
+            "chinese": "果然翁",
+            "french": "Qulbutoké"
+        },
+        "type": [
+            "Psychic"
+        ],
+        "base": {
+            "HP": 190,
+            "Attack": 33,
+            "Defense": 58,
+            "Sp. Attack": 33,
+            "Sp. Defense": 58,
+            "Speed": 33
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/202.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/202MS.png"
+    },
+    {
+        "id": 203,
+        "name": {
+            "english": "Girafarig",
+            "japanese": "キリンリキ",
+            "chinese": "麒麟奇",
+            "french": "Girafarig"
+        },
+        "type": [
+            "Normal",
+            "Psychic"
+        ],
+        "base": {
+            "HP": 70,
+            "Attack": 80,
+            "Defense": 65,
+            "Sp. Attack": 90,
+            "Sp. Defense": 65,
+            "Speed": 85
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/203.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/203MS.png"
+    },
+    {
+        "id": 204,
+        "name": {
+            "english": "Pineco",
+            "japanese": "クヌギダマ",
+            "chinese": "榛果球",
+            "french": "Pomdepik"
+        },
+        "type": [
+            "Bug"
+        ],
+        "base": {
+            "HP": 50,
+            "Attack": 65,
+            "Defense": 90,
+            "Sp. Attack": 35,
+            "Sp. Defense": 35,
+            "Speed": 15
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/204.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/204MS.png"
+    },
+    {
+        "id": 205,
+        "name": {
+            "english": "Forretress",
+            "japanese": "フォレトス",
+            "chinese": "佛烈托斯",
+            "french": "Foretress"
+        },
+        "type": [
+            "Bug",
+            "Steel"
+        ],
+        "base": {
+            "HP": 75,
+            "Attack": 90,
+            "Defense": 140,
+            "Sp. Attack": 60,
+            "Sp. Defense": 60,
+            "Speed": 40
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/205.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/205MS.png"
+    },
+    {
+        "id": 206,
+        "name": {
+            "english": "Dunsparce",
+            "japanese": "ノコッチ",
+            "chinese": "土龙弟弟",
+            "french": "Insolourdo"
+        },
+        "type": [
+            "Normal"
+        ],
+        "base": {
+            "HP": 100,
+            "Attack": 70,
+            "Defense": 70,
+            "Sp. Attack": 65,
+            "Sp. Defense": 65,
+            "Speed": 45
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/206.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/206MS.png"
+    },
+    {
+        "id": 207,
+        "name": {
+            "english": "Gligar",
+            "japanese": "グライガー",
+            "chinese": "天蝎",
+            "french": "Scorplane"
+        },
+        "type": [
+            "Ground",
+            "Flying"
+        ],
+        "base": {
+            "HP": 65,
+            "Attack": 75,
+            "Defense": 105,
+            "Sp. Attack": 35,
+            "Sp. Defense": 65,
+            "Speed": 85
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/207.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/207MS.png"
+    },
+    {
+        "id": 208,
+        "name": {
+            "english": "Steelix",
+            "japanese": "ハガネール",
+            "chinese": "大钢蛇",
+            "french": "Steelix"
+        },
+        "type": [
+            "Steel",
+            "Ground"
+        ],
+        "base": {
+            "HP": 75,
+            "Attack": 85,
+            "Defense": 200,
+            "Sp. Attack": 55,
+            "Sp. Defense": 65,
+            "Speed": 30
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/208.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/208MS.png"
+    },
+    {
+        "id": 209,
+        "name": {
+            "english": "Snubbull",
+            "japanese": "ブルー",
+            "chinese": "布鲁",
+            "french": "Snubbull"
+        },
+        "type": [
+            "Fairy"
+        ],
+        "base": {
+            "HP": 60,
+            "Attack": 80,
+            "Defense": 50,
+            "Sp. Attack": 40,
+            "Sp. Defense": 40,
+            "Speed": 30
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/209.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/209MS.png"
+    },
+    {
+        "id": 210,
+        "name": {
+            "english": "Granbull",
+            "japanese": "グランブル",
+            "chinese": "布鲁皇",
+            "french": "Granbull"
+        },
+        "type": [
+            "Fairy"
+        ],
+        "base": {
+            "HP": 90,
+            "Attack": 120,
+            "Defense": 75,
+            "Sp. Attack": 60,
+            "Sp. Defense": 60,
+            "Speed": 45
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/210.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/210MS.png"
+    },
+    {
+        "id": 211,
+        "name": {
+            "english": "Qwilfish",
+            "japanese": "ハリーセン",
+            "chinese": "千针鱼",
+            "french": "Qwilfish"
+        },
+        "type": [
+            "Water",
+            "Poison"
+        ],
+        "base": {
+            "HP": 65,
+            "Attack": 95,
+            "Defense": 85,
+            "Sp. Attack": 55,
+            "Sp. Defense": 55,
+            "Speed": 85
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/211.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/211MS.png"
+    },
+    {
+        "id": 212,
+        "name": {
+            "english": "Scizor",
+            "japanese": "ハッサム",
+            "chinese": "巨钳螳螂",
+            "french": "Cizayox"
+        },
+        "type": [
+            "Bug",
+            "Steel"
+        ],
+        "base": {
+            "HP": 70,
+            "Attack": 130,
+            "Defense": 100,
+            "Sp. Attack": 55,
+            "Sp. Defense": 80,
+            "Speed": 65
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/212.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/212MS.png"
+    },
+    {
+        "id": 213,
+        "name": {
+            "english": "Shuckle",
+            "japanese": "ツボツボ",
+            "chinese": "壶壶",
+            "french": "Caratroc"
+        },
+        "type": [
+            "Bug",
+            "Rock"
+        ],
+        "base": {
+            "HP": 20,
+            "Attack": 10,
+            "Defense": 230,
+            "Sp. Attack": 10,
+            "Sp. Defense": 230,
+            "Speed": 5
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/213.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/213MS.png"
+    },
+    {
+        "id": 214,
+        "name": {
+            "english": "Heracross",
+            "japanese": "ヘラクロス",
+            "chinese": "赫拉克罗斯",
+            "french": "Scarhino"
+        },
+        "type": [
+            "Bug",
+            "Fighting"
+        ],
+        "base": {
+            "HP": 80,
+            "Attack": 125,
+            "Defense": 75,
+            "Sp. Attack": 40,
+            "Sp. Defense": 95,
+            "Speed": 85
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/214.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/214MS.png"
+    },
+    {
+        "id": 215,
+        "name": {
+            "english": "Sneasel",
+            "japanese": "ニューラ",
+            "chinese": "狃拉",
+            "french": "Farfuret"
+        },
+        "type": [
+            "Dark",
+            "Ice"
+        ],
+        "base": {
+            "HP": 55,
+            "Attack": 95,
+            "Defense": 55,
+            "Sp. Attack": 35,
+            "Sp. Defense": 75,
+            "Speed": 115
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/215.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/215MS.png"
+    },
+    {
+        "id": 216,
+        "name": {
+            "english": "Teddiursa",
+            "japanese": "ヒメグマ",
+            "chinese": "熊宝宝",
+            "french": "Teddiursa"
+        },
+        "type": [
+            "Normal"
+        ],
+        "base": {
+            "HP": 60,
+            "Attack": 80,
+            "Defense": 50,
+            "Sp. Attack": 50,
+            "Sp. Defense": 50,
+            "Speed": 40
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/216.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/216MS.png"
+    },
+    {
+        "id": 217,
+        "name": {
+            "english": "Ursaring",
+            "japanese": "リングマ",
+            "chinese": "圈圈熊",
+            "french": "Ursaring"
+        },
+        "type": [
+            "Normal"
+        ],
+        "base": {
+            "HP": 90,
+            "Attack": 130,
+            "Defense": 75,
+            "Sp. Attack": 75,
+            "Sp. Defense": 75,
+            "Speed": 55
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/217.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/217MS.png"
+    },
+    {
+        "id": 218,
+        "name": {
+            "english": "Slugma",
+            "japanese": "マグマッグ",
+            "chinese": "熔岩虫",
+            "french": "Limagma"
+        },
+        "type": [
+            "Fire"
+        ],
+        "base": {
+            "HP": 40,
+            "Attack": 40,
+            "Defense": 40,
+            "Sp. Attack": 70,
+            "Sp. Defense": 40,
+            "Speed": 20
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/218.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/218MS.png"
+    },
+    {
+        "id": 219,
+        "name": {
+            "english": "Magcargo",
+            "japanese": "マグカルゴ",
+            "chinese": "熔岩蜗牛",
+            "french": "Volcaropod"
+        },
+        "type": [
+            "Fire",
+            "Rock"
+        ],
+        "base": {
+            "HP": 60,
+            "Attack": 50,
+            "Defense": 120,
+            "Sp. Attack": 90,
+            "Sp. Defense": 80,
+            "Speed": 30
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/219.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/219MS.png"
+    },
+    {
+        "id": 220,
+        "name": {
+            "english": "Swinub",
+            "japanese": "ウリムー",
+            "chinese": "小山猪",
+            "french": "Marcacrin"
+        },
+        "type": [
+            "Ice",
+            "Ground"
+        ],
+        "base": {
+            "HP": 50,
+            "Attack": 50,
+            "Defense": 40,
+            "Sp. Attack": 30,
+            "Sp. Defense": 30,
+            "Speed": 50
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/220.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/220MS.png"
+    },
+    {
+        "id": 221,
+        "name": {
+            "english": "Piloswine",
+            "japanese": "イノムー",
+            "chinese": "长毛猪",
+            "french": "Cochignon"
+        },
+        "type": [
+            "Ice",
+            "Ground"
+        ],
+        "base": {
+            "HP": 100,
+            "Attack": 100,
+            "Defense": 80,
+            "Sp. Attack": 60,
+            "Sp. Defense": 60,
+            "Speed": 50
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/221.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/221MS.png"
+    },
+    {
+        "id": 222,
+        "name": {
+            "english": "Corsola",
+            "japanese": "サニーゴ",
+            "chinese": "太阳珊瑚",
+            "french": "Corayon"
+        },
+        "type": [
+            "Water",
+            "Rock"
+        ],
+        "base": {
+            "HP": 65,
+            "Attack": 55,
+            "Defense": 95,
+            "Sp. Attack": 65,
+            "Sp. Defense": 95,
+            "Speed": 35
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/222.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/222MS.png"
+    },
+    {
+        "id": 223,
+        "name": {
+            "english": "Remoraid",
+            "japanese": "テッポウオ",
+            "chinese": "铁炮鱼",
+            "french": "Rémoraid"
+        },
+        "type": [
+            "Water"
+        ],
+        "base": {
+            "HP": 35,
+            "Attack": 65,
+            "Defense": 35,
+            "Sp. Attack": 65,
+            "Sp. Defense": 35,
+            "Speed": 65
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/223.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/223MS.png"
+    },
+    {
+        "id": 224,
+        "name": {
+            "english": "Octillery",
+            "japanese": "オクタン",
+            "chinese": "章鱼桶",
+            "french": "Octillery"
+        },
+        "type": [
+            "Water"
+        ],
+        "base": {
+            "HP": 75,
+            "Attack": 105,
+            "Defense": 75,
+            "Sp. Attack": 105,
+            "Sp. Defense": 75,
+            "Speed": 45
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/224.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/224MS.png"
+    },
+    {
+        "id": 225,
+        "name": {
+            "english": "Delibird",
+            "japanese": "デリバード",
+            "chinese": "信使鸟",
+            "french": "Cadoizo"
+        },
+        "type": [
+            "Ice",
+            "Flying"
+        ],
+        "base": {
+            "HP": 45,
+            "Attack": 55,
+            "Defense": 45,
+            "Sp. Attack": 65,
+            "Sp. Defense": 45,
+            "Speed": 75
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/225.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/225MS.png"
+    },
+    {
+        "id": 226,
+        "name": {
+            "english": "Mantine",
+            "japanese": "マンタイン",
+            "chinese": "巨翅飞鱼",
+            "french": "Démanta"
+        },
+        "type": [
+            "Water",
+            "Flying"
+        ],
+        "base": {
+            "HP": 85,
+            "Attack": 40,
+            "Defense": 70,
+            "Sp. Attack": 80,
+            "Sp. Defense": 140,
+            "Speed": 70
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/226.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/226MS.png"
+    },
+    {
+        "id": 227,
+        "name": {
+            "english": "Skarmory",
+            "japanese": "エアームド",
+            "chinese": "盔甲鸟",
+            "french": "Airmure"
+        },
+        "type": [
+            "Steel",
+            "Flying"
+        ],
+        "base": {
+            "HP": 65,
+            "Attack": 80,
+            "Defense": 140,
+            "Sp. Attack": 40,
+            "Sp. Defense": 70,
+            "Speed": 70
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/227.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/227MS.png"
+    },
+    {
+        "id": 228,
+        "name": {
+            "english": "Houndour",
+            "japanese": "デルビル",
+            "chinese": "戴鲁比",
+            "french": "Malosse"
+        },
+        "type": [
+            "Dark",
+            "Fire"
+        ],
+        "base": {
+            "HP": 45,
+            "Attack": 60,
+            "Defense": 30,
+            "Sp. Attack": 80,
+            "Sp. Defense": 50,
+            "Speed": 65
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/228.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/228MS.png"
+    },
+    {
+        "id": 229,
+        "name": {
+            "english": "Houndoom",
+            "japanese": "ヘルガー",
+            "chinese": "黑鲁加",
+            "french": "Démolosse"
+        },
+        "type": [
+            "Dark",
+            "Fire"
+        ],
+        "base": {
+            "HP": 75,
+            "Attack": 90,
+            "Defense": 50,
+            "Sp. Attack": 110,
+            "Sp. Defense": 80,
+            "Speed": 95
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/229.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/229MS.png"
+    },
+    {
+        "id": 230,
+        "name": {
+            "english": "Kingdra",
+            "japanese": "キングドラ",
+            "chinese": "刺龙王",
+            "french": "Hyporoi"
+        },
+        "type": [
+            "Water",
+            "Dragon"
+        ],
+        "base": {
+            "HP": 75,
+            "Attack": 95,
+            "Defense": 95,
+            "Sp. Attack": 95,
+            "Sp. Defense": 95,
+            "Speed": 85
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/230.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/230MS.png"
+    },
+    {
+        "id": 231,
+        "name": {
+            "english": "Phanpy",
+            "japanese": "ゴマゾウ",
+            "chinese": "小小象",
+            "french": "Phanpy"
+        },
+        "type": [
+            "Ground"
+        ],
+        "base": {
+            "HP": 90,
+            "Attack": 60,
+            "Defense": 60,
+            "Sp. Attack": 40,
+            "Sp. Defense": 40,
+            "Speed": 40
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/231.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/231MS.png"
+    },
+    {
+        "id": 232,
+        "name": {
+            "english": "Donphan",
+            "japanese": "ドンファン",
+            "chinese": "顿甲",
+            "french": "Donphan"
+        },
+        "type": [
+            "Ground"
+        ],
+        "base": {
+            "HP": 90,
+            "Attack": 120,
+            "Defense": 120,
+            "Sp. Attack": 60,
+            "Sp. Defense": 60,
+            "Speed": 50
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/232.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/232MS.png"
+    },
+    {
+        "id": 233,
+        "name": {
+            "english": "Porygon2",
+            "japanese": "ポリゴン２",
+            "chinese": "多边兽Ⅱ",
+            "french": "Porygon2"
+        },
+        "type": [
+            "Normal"
+        ],
+        "base": {
+            "HP": 85,
+            "Attack": 80,
+            "Defense": 90,
+            "Sp. Attack": 105,
+            "Sp. Defense": 95,
+            "Speed": 60
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/233.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/233MS.png"
+    },
+    {
+        "id": 234,
+        "name": {
+            "english": "Stantler",
+            "japanese": "オドシシ",
+            "chinese": "惊角鹿",
+            "french": "Cerfrousse"
+        },
+        "type": [
+            "Normal"
+        ],
+        "base": {
+            "HP": 73,
+            "Attack": 95,
+            "Defense": 62,
+            "Sp. Attack": 85,
+            "Sp. Defense": 65,
+            "Speed": 85
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/234.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/234MS.png"
+    },
+    {
+        "id": 235,
+        "name": {
+            "english": "Smeargle",
+            "japanese": "ドーブル",
+            "chinese": "图图犬",
+            "french": "Queulorior"
+        },
+        "type": [
+            "Normal"
+        ],
+        "base": {
+            "HP": 55,
+            "Attack": 20,
+            "Defense": 35,
+            "Sp. Attack": 20,
+            "Sp. Defense": 45,
+            "Speed": 75
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/235.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/235MS.png"
+    },
+    {
+        "id": 236,
+        "name": {
+            "english": "Tyrogue",
+            "japanese": "バルキー",
+            "chinese": "无畏小子",
+            "french": "Debugant"
+        },
+        "type": [
+            "Fighting"
+        ],
+        "base": {
+            "HP": 35,
+            "Attack": 35,
+            "Defense": 35,
+            "Sp. Attack": 35,
+            "Sp. Defense": 35,
+            "Speed": 35
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/236.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/236MS.png"
+    },
+    {
+        "id": 237,
+        "name": {
+            "english": "Hitmontop",
+            "japanese": "カポエラー",
+            "chinese": "战舞郎",
+            "french": "Kapoera"
+        },
+        "type": [
+            "Fighting"
+        ],
+        "base": {
+            "HP": 50,
+            "Attack": 95,
+            "Defense": 95,
+            "Sp. Attack": 35,
+            "Sp. Defense": 110,
+            "Speed": 70
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/237.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/237MS.png"
+    },
+    {
+        "id": 238,
+        "name": {
+            "english": "Smoochum",
+            "japanese": "ムチュール",
+            "chinese": "迷唇娃",
+            "french": "Lippouti"
+        },
+        "type": [
+            "Ice",
+            "Psychic"
+        ],
+        "base": {
+            "HP": 45,
+            "Attack": 30,
+            "Defense": 15,
+            "Sp. Attack": 85,
+            "Sp. Defense": 65,
+            "Speed": 65
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/238.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/238MS.png"
+    },
+    {
+        "id": 239,
+        "name": {
+            "english": "Elekid",
+            "japanese": "エレキッド",
+            "chinese": "电击怪",
+            "french": "Élekid"
+        },
+        "type": [
+            "Electric"
+        ],
+        "base": {
+            "HP": 45,
+            "Attack": 63,
+            "Defense": 37,
+            "Sp. Attack": 65,
+            "Sp. Defense": 55,
+            "Speed": 95
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/239.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/239MS.png"
+    },
+    {
+        "id": 240,
+        "name": {
+            "english": "Magby",
+            "japanese": "ブビィ",
+            "chinese": "鸭嘴宝宝",
+            "french": "Magby"
+        },
+        "type": [
+            "Fire"
+        ],
+        "base": {
+            "HP": 45,
+            "Attack": 75,
+            "Defense": 37,
+            "Sp. Attack": 70,
+            "Sp. Defense": 55,
+            "Speed": 83
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/240.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/240MS.png"
+    },
+    {
+        "id": 241,
+        "name": {
+            "english": "Miltank",
+            "japanese": "ミルタンク",
+            "chinese": "大奶罐",
+            "french": "Écrémeuh"
+        },
+        "type": [
+            "Normal"
+        ],
+        "base": {
+            "HP": 95,
+            "Attack": 80,
+            "Defense": 105,
+            "Sp. Attack": 40,
+            "Sp. Defense": 70,
+            "Speed": 100
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/241.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/241MS.png"
+    },
+    {
+        "id": 242,
+        "name": {
+            "english": "Blissey",
+            "japanese": "ハピナス",
+            "chinese": "幸福蛋",
+            "french": "Leuphorie"
+        },
+        "type": [
+            "Normal"
+        ],
+        "base": {
+            "HP": 255,
+            "Attack": 10,
+            "Defense": 10,
+            "Sp. Attack": 75,
+            "Sp. Defense": 135,
+            "Speed": 55
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/242.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/242MS.png"
+    },
+    {
+        "id": 243,
+        "name": {
+            "english": "Raikou",
+            "japanese": "ライコウ",
+            "chinese": "雷公",
+            "french": "Raikou"
+        },
+        "type": [
+            "Electric"
+        ],
+        "base": {
+            "HP": 90,
+            "Attack": 85,
+            "Defense": 75,
+            "Sp. Attack": 115,
+            "Sp. Defense": 100,
+            "Speed": 115
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/243.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/243MS.png"
+    },
+    {
+        "id": 244,
+        "name": {
+            "english": "Entei",
+            "japanese": "エンテイ",
+            "chinese": "炎帝",
+            "french": "Entei"
+        },
+        "type": [
+            "Fire"
+        ],
+        "base": {
+            "HP": 115,
+            "Attack": 115,
+            "Defense": 85,
+            "Sp. Attack": 90,
+            "Sp. Defense": 75,
+            "Speed": 100
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/244.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/244MS.png"
+    },
+    {
+        "id": 245,
+        "name": {
+            "english": "Suicune",
+            "japanese": "スイクン",
+            "chinese": "水君",
+            "french": "Suicune"
+        },
+        "type": [
+            "Water"
+        ],
+        "base": {
+            "HP": 100,
+            "Attack": 75,
+            "Defense": 115,
+            "Sp. Attack": 90,
+            "Sp. Defense": 115,
+            "Speed": 85
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/245.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/245MS.png"
+    },
+    {
+        "id": 246,
+        "name": {
+            "english": "Larvitar",
+            "japanese": "ヨーギラス",
+            "chinese": "幼基拉斯",
+            "french": "Embrylex"
+        },
+        "type": [
+            "Rock",
+            "Ground"
+        ],
+        "base": {
+            "HP": 50,
+            "Attack": 64,
+            "Defense": 50,
+            "Sp. Attack": 45,
+            "Sp. Defense": 50,
+            "Speed": 41
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/246.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/246MS.png"
+    },
+    {
+        "id": 247,
+        "name": {
+            "english": "Pupitar",
+            "japanese": "サナギラス",
+            "chinese": "沙基拉斯",
+            "french": "Ymphect"
+        },
+        "type": [
+            "Rock",
+            "Ground"
+        ],
+        "base": {
+            "HP": 70,
+            "Attack": 84,
+            "Defense": 70,
+            "Sp. Attack": 65,
+            "Sp. Defense": 70,
+            "Speed": 51
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/247.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/247MS.png"
+    },
+    {
+        "id": 248,
+        "name": {
+            "english": "Tyranitar",
+            "japanese": "バンギラス",
+            "chinese": "班基拉斯",
+            "french": "Tyranocif"
+        },
+        "type": [
+            "Rock",
+            "Dark"
+        ],
+        "base": {
+            "HP": 100,
+            "Attack": 134,
+            "Defense": 110,
+            "Sp. Attack": 95,
+            "Sp. Defense": 100,
+            "Speed": 61
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/248.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/248MS.png"
+    },
+    {
+        "id": 249,
+        "name": {
+            "english": "Lugia",
+            "japanese": "ルギア",
+            "chinese": "洛奇亚",
+            "french": "Lugia"
+        },
+        "type": [
+            "Psychic",
+            "Flying"
+        ],
+        "base": {
+            "HP": 106,
+            "Attack": 90,
+            "Defense": 130,
+            "Sp. Attack": 90,
+            "Sp. Defense": 154,
+            "Speed": 110
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/249.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/249MS.png"
+    },
+    {
+        "id": 250,
+        "name": {
+            "english": "Ho-Oh",
+            "japanese": "ホウオウ",
+            "chinese": "凤王",
+            "french": "Ho-Oh"
+        },
+        "type": [
+            "Fire",
+            "Flying"
+        ],
+        "base": {
+            "HP": 106,
+            "Attack": 130,
+            "Defense": 90,
+            "Sp. Attack": 110,
+            "Sp. Defense": 154,
+            "Speed": 90
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/250.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/250MS.png"
+    },
+    {
+        "id": 251,
+        "name": {
+            "english": "Celebi",
+            "japanese": "セレビィ",
+            "chinese": "时拉比",
+            "french": "Celebi"
+        },
+        "type": [
+            "Psychic",
+            "Grass"
+        ],
+        "base": {
+            "HP": 100,
+            "Attack": 100,
+            "Defense": 100,
+            "Sp. Attack": 100,
+            "Sp. Defense": 100,
+            "Speed": 100
+        },
+        "imagenHD": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/251.png",
+        "iconoMini": "https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/251MS.png"
+    }
+]

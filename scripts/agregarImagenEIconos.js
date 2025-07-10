@@ -1,12 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 
+//Agrega automaticamente las direccionesd e la imagen y el icono a su pokemon correspondiente en el archivo pokedex.json
+
 const POKEDEX_PATH = '../poke-assets/data/pokedex.json';
 const IMAGES_DIR = '../poke-assets/images';
 const ICONS_DIR = '../poke-assets/sprites-mini';
 
-const BASE_IMG_URL = 'https://raw.githubusercontent.com/Vtor27/poke-assets/main/images/';
-const BASE_ICON_URL = 'https://raw.githubusercontent.com/Vtor27/poke-assets/main/sprites-mini/';
+const BASE_IMG_URL = 'https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/images/';
+const BASE_ICON_URL = 'https://raw.githubusercontent.com/Vtor27/Team-Builder-Poke/main/poke-assets/sprites-mini/';
 
 const pokedex = JSON.parse(fs.readFileSync(POKEDEX_PATH, 'utf8'));
 const imageFiles = fs.readdirSync(IMAGES_DIR);
