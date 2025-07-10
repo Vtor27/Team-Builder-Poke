@@ -3,6 +3,15 @@
 # dependencies
 node_modules/
 
+# IDEs
+/.metadata/
+
+
+# Spring Boot
+target/
+*.jar
+*.war
+
 # Expo
 .expo/
 dist/
