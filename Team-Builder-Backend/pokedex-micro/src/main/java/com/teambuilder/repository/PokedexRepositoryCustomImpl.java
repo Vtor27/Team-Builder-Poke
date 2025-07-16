@@ -1,5 +1,6 @@
 package com.teambuilder.repository;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
 import jakarta.persistence.*;
@@ -21,14 +22,12 @@ import com.teambuilder.domain.Tier;
 import com.teambuilder.domain.Types;
 
 @Repository
+@Primary
 public class PokedexRepositoryCustomImpl implements PokedexRepositoryCustom{
 	
 	@PersistenceContext
 	private EntityManager entityManager;
 	
-	private PokedexRepositoryCustomImpl() {
-		super ();
-	}
 	
 	@Override
 	public List<Pokemon> advancedFilter(String name, String type, String regionApparitions, Integer generation, String tier, String regionOrigin){

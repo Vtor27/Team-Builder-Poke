@@ -1,8 +1,11 @@
 package com.teambuilder.domain;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import jakarta.persistence.*;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 @Entity
 @Table(name = "tier")
@@ -15,5 +18,7 @@ public class Tier {
 
 	//Relaciones
 	@OneToMany(mappedBy = "tier")
-	private List<Pokemon> pokemons;
+	@EqualsAndHashCode.Exclude
+	@ToString.Exclude
+	private Set<Pokemon> pokemons = new HashSet<>();
 }

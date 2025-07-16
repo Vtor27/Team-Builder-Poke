@@ -1,9 +1,12 @@
 package com.teambuilder.domain;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 @Entity
 @Table(name = "generation")
@@ -13,10 +16,12 @@ public class Generation {
 	@Id
 	private Integer id;
 	
-	private int number;
+	private Integer number;
 	
 	//Relaciones
 	@OneToMany(mappedBy = "generation")
-	private List<Pokemon> pokemons;
+	@EqualsAndHashCode.Exclude
+	@ToString.Exclude
+	private Set<Pokemon> pokemons = new HashSet<>();
 	
 }

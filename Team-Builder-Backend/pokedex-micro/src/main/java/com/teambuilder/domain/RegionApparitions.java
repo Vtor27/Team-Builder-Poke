@@ -1,11 +1,17 @@
 package com.teambuilder.domain;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
+@Getter
+@Setter
+@ToString(exclude = {"pokemon", "region"})
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 @Table(name = "region_apparitions")
-@Data
 public class RegionApparitions {
 	
 	@EmbeddedId
