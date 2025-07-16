@@ -7,13 +7,17 @@ import lombok.Data;
 @Table(name = "region_apparitions")
 @Data
 public class RegionApparitions {
-	@Id
+	
+	@EmbeddedId
+	private RegionApparitionsId id;
+	
 	@ManyToOne
+	@MapsId("pokemon")					//Indica el atributo al que se refiere en RegionApparitionsId. 
 	@JoinColumn(name = "pokemon_id")
 	private Pokemon pokemon;
 	
-	@Id
 	@ManyToOne
+	@MapsId("region")
 	@JoinColumn(name = "region_id")
 	private Region region;
 }

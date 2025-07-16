@@ -32,8 +32,8 @@ public class Pokemon {
 	@JoinColumn(name = "region_origin")
 	private Region regionOrigin;
 	
-	@ManyToMany(mappedBy = "pokemonList")
-	private List<Region> regions;
+	@OneToMany(mappedBy = "pokemon")
+	private List<RegionApparitions> regionAparitions;
 	
 	@ManyToOne
 	@JoinColumn(name = "generation_id")
