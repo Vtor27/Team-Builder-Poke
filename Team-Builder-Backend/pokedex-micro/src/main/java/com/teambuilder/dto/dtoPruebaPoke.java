@@ -1,7 +1,5 @@
 package com.teambuilder.dto;
 
-import java.util.List;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;

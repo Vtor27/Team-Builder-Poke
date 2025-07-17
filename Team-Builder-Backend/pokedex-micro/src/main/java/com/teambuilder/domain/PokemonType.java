@@ -7,13 +7,20 @@ import lombok.Data;
 @Table(name = "pokemon_type")
 @Data
 public class PokemonType {
-	@Id
-	@ManyToOne
-	@JoinColumn(name = "pokemon_id")
-	private Pokemon pokemon;
-	
-	@Id
-	@ManyToOne
-	@JoinColumn(name = "type_id")
-	private Types types;
+
+    @EmbeddedId
+    private PokemonTypeId id;
+
+    @ManyToOne
+    @MapsId("pokemonId")
+    @JoinColumn(name = "pokemon_id")
+    private Pokemon pokemon;
+
+    @ManyToOne
+    @MapsId("typeId")
+    @JoinColumn(name = "type_id")
+    private Types type;
+
+    @Column(name = "slot")
+    private int slot;
 }

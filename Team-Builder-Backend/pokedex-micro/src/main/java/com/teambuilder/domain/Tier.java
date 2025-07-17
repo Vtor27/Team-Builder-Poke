@@ -4,11 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import jakarta.persistence.*;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 @Entity
 @Table(name = "tier")
+@Data
 public class Tier {
 	
 	@Id
@@ -21,4 +23,5 @@ public class Tier {
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
 	private Set<Pokemon> pokemons = new HashSet<>();
+
 }
