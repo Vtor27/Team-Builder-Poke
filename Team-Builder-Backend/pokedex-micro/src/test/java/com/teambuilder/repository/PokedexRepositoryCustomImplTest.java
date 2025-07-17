@@ -1,9 +1,13 @@
 package com.teambuilder.repository;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,10 +28,35 @@ public class PokedexRepositoryCustomImplTest {
 //		this.pokedexRepository = pokedexRepository;
 //	}
 	
+//	@Test
+//	public void testDetailedPokemon() {
+//	    System.out.println("|---------  DETAILED POKE INFO -------|");
+//	    int id = 150; // Mewtwo
+//
+//	    Pokemon dtoResult = pokedexRepository.detailedPokemon(id);
+//
+//	    assertNotNull(dtoResult);
+//	    assertEquals(150, dtoResult.getId());
+//	    assertEquals("Mewtwo", dtoResult.getName());
+//	    assertNotNull(dtoResult.getGeneration());
+//	    assertEquals(1, dtoResult.getGeneration().getId());
+//
+//	    boolean containType = dtoResult.getTypes().stream()
+//	        .anyMatch(tipo -> tipo.getName().equals("Psychic"));
+//	    assertTrue(containType);
+//
+//	    System.out.println("Nombre: " + dtoResult.getName());
+//	    System.out.println("Tipos: " + dtoResult.getTypes());
+//	    System.out.println("Generación: " + dtoResult.getGeneration());
+//	}
+	
 	@Test
 	public void testFilterByType() {
 		System.out.println("|---------  FILTER BY TYPE -------|");
-		List<Pokemon> result = pokedexRepository.advancedFilter(null, "Fire", null, null, null, null);
+		List<String> types = new ArrayList<>();
+		types.add("Fire");
+		
+		List<Pokemon> result = pokedexRepository.advancedFilter(null, types, null, null, null, null);
 		
 		assertNotNull(result);
 		assertFalse(result.isEmpty());

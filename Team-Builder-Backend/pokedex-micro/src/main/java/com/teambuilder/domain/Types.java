@@ -5,8 +5,6 @@ import java.util.Set;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
 
 @Entity
 @Table(name = "types")
@@ -20,9 +18,7 @@ public class Types {
 	private String name;
 	
 	//Relaciones
-	@ManyToMany(mappedBy = "types")
-	@EqualsAndHashCode.Exclude
-	@ToString.Exclude
-	private Set<Pokemon> pokemons = new HashSet<>();
+	@OneToMany(mappedBy = "type", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<PokemonType> types = new HashSet<>();
 	
 }

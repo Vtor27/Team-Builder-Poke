@@ -1,6 +1,8 @@
 package com.teambuilder.domain;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import jakarta.persistence.*;
@@ -13,7 +15,7 @@ import lombok.ToString;
 @Table(name = "pokemon")
 @Getter
 @Setter
-@ToString(exclude = {"regionApparitions", "types"})
+@ToString(exclude = {"regionApparitions", "pokemonTypes"})
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Pokemon {
 	
@@ -32,10 +34,13 @@ public class Pokemon {
 	private Integer special_attack;
 	private Integer special_defense;
 	private Integer speed;
+//	private String nextEvolution;
+//	private String prevEvolution;
 	private String image;
 	
 	@Column(name = "icon_mini")
 	private String icon;
+	
 	
 	//Relaciones
 	@ManyToOne
@@ -52,12 +57,8 @@ public class Pokemon {
 	@ManyToOne
 	@JoinColumn(name = "tier_id")
 	private Tier tier;
-	
-	@ManyToMany
-	@JoinTable(
-	name= "pokemon_type",
-	joinColumns = @JoinColumn(name = "pokemon_id"),
-	inverseJoinColumns = @JoinColumn(name = "type_id")
-	)
-	private Set<Types> types = new HashSet<>();
+
+	@OneToMany(mappedBy = "pokemon", cascade = CascadeType.ALL, orphanRemoval = true)
+	@OrderBy("slot ASC")
+	private List<PokemonType> pokemonTypes = new ArrayList<>();
 }

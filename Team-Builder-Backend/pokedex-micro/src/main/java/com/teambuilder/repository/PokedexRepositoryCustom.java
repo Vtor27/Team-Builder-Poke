@@ -6,5 +6,7 @@ import com.teambuilder.domain.Pokemon;
 
 public interface PokedexRepositoryCustom {
 
-	List<Pokemon> advancedFilter(String name, String type, String regionApparitions, Integer generation, String tier, String regionOrigin);
+	List<Pokemon> advancedFilter (String name, List<String> type, String regionApparitions, Integer generation, String tier, String regionOrigin);
+	
+	Pokemon detailedPokemon (int id);
 }
