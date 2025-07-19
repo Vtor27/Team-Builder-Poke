@@ -1,0 +1,25 @@
+meta {
+  name: GET - filtros poke
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://192.168.1.135:8069/api/pokemon/filter?regionOrigin=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  regionOrigin: 1
+  ~name: null
+  ~type: null
+  ~regionApparitions: null
+  ~generation: null
+  ~tier: null
+}
+
+body:json {
+  
+  
+}
