@@ -50,7 +50,8 @@ public class PokemonMapper {
 			return new PokedexItemDTO(
 				poke.getId(),
 				poke.getName(),
-				poke.getImage()
+				poke.getImage(),
+				types
 			);
 	}
 }

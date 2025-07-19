@@ -82,13 +82,13 @@ public class PokedexRepositoryCustomImpl implements PokedexRepositoryCustom {
 		// Se compara por nombre ignorando mayúsculas
 		if (regionOrigin != null && !regionOrigin.isEmpty()) {
 			Join<Pokemon, Region> joinRegionOrigin = root.join("regionOrigin", JoinType.INNER);
-			filters.add(cb.equal(cb.lower(joinRegionOrigin.get("name")), regionOrigin.toLowerCase()));
+			filters.add(cb.equal((joinRegionOrigin.get("id")), regionOrigin.toLowerCase()));
 		}
 
 		if (regionApparitions != null && !regionApparitions.isEmpty()) {
 			Join<Pokemon, RegionApparitions> joinRegionApparitions = root.join("regionApparitions", JoinType.INNER);
 			Join<RegionApparitions, Region> joinRegion = joinRegionApparitions.join("region", JoinType.INNER);
-			filters.add(cb.equal(cb.lower(joinRegion.get("name")), regionApparitions.toLowerCase()));
+			filters.add(cb.equal((joinRegion.get("id")), regionApparitions.toLowerCase()));
 		}
 
 		// Utilizar los filtros en el WHERE
