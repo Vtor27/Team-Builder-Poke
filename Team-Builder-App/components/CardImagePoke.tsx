@@ -13,7 +13,7 @@ const CardImagePoke = ({ pokemon }: Props) => {
         <Image
           source={{ uri: pokemon.image }}
           resizeMode="contain"
-          className="w-40 h-40 mb-2"
+          className="w-52 h-52 mb-2"
         />
       </View>
       <View className="w-1/2 h-48">

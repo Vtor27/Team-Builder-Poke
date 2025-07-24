@@ -45,19 +45,34 @@ const typeColor: Record<PokemonType, string> = {
   water: "#1E90FF",
 };
 
+// POSIBLE CAMBIO -> UTILIZAR LOS ICONOS DE LOS TIPOS EN VEZ DE LAS TARGETAS CON LOS TIPOS ESCRITOS
+
 const CardTypePoke = ({ types }: Props) => {
   const checkedType = types
     .map((type) => type.toLocaleLowerCase())
     .filter((t): t is PokemonType => t in typeColor);
 
-  const darkTypes = ["psychic", "poison", "dark", "ghost", "dragon", "steel"];
+  const darkTypes = [
+    "psychic",
+    "poison",
+    "dark",
+    "ghost",
+    "dragon",
+    "steel",
+    "grass",
+    "bug",
+    "ground",
+  ];
 
   const checkColorText = (
     darkTypes: string[],
     type1: string,
     type2: string
   ) => {
-    return darkTypes.includes(type1 || type2) ? "text-white" : "text-black";
+    return (
+      (darkTypes.includes(type1) ? "text-white" : "text-black") +
+      (type2 && darkTypes.includes(type2) ? " text-white" : " text-black")
+    );
   };
 
   const stylesWind = {
