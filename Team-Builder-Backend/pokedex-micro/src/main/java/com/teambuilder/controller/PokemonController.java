@@ -49,6 +49,8 @@ public class PokemonController {
 		) {
 		List<PokedexItemDTO> pokemonList = pokedexService.getFilteredPokemon(name, type, regionApparitions, generation, tier, regionOrigin);
 		
+		
+		
 		return ResponseEntity.ok(pokemonList);
 	}
 

@@ -51,6 +51,7 @@ public class PokemonMapper {
 				poke.getId(),
 				poke.getName(),
 				poke.getImage(),
+				poke.getIcon(),
 				types
 			);
 	}

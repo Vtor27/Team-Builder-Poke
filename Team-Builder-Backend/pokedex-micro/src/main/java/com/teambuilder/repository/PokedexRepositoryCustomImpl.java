@@ -41,11 +41,22 @@ public class PokedexRepositoryCustomImpl implements PokedexRepositoryCustom {
 
 		// Fetch a todos los campos para que traiga la info completa de los pokes
 		// filtrados aunque no se filtre por algún campo
-		root.fetch("pokemonTypes", JoinType.LEFT);
-		root.fetch("generation", JoinType.LEFT);
-		root.fetch("tier", JoinType.LEFT);
-		root.fetch("regionApparitions", JoinType.LEFT);
-		root.fetch("regionOrigin", JoinType.LEFT);
+		if (type == null || type.isEmpty()) {
+		    root.fetch("pokemonTypes", JoinType.LEFT);
+		}
+		if (generation == null || generation == 0) {
+		    root.fetch("generation", JoinType.LEFT);
+		}
+		if (tier == null || tier.isEmpty()) {
+		    root.fetch("tier", JoinType.LEFT);
+		}
+		if (regionApparitions == null || regionApparitions.isEmpty()) {
+		    root.fetch("regionApparitions", JoinType.LEFT);
+		}
+		if (regionOrigin == null || regionOrigin.isEmpty()) {
+		    root.fetch("regionOrigin", JoinType.LEFT);
+		}
+
 
 		// Filtros -> Predicados
 		List<Predicate> filters = new ArrayList<>();
@@ -60,12 +71,10 @@ public class PokedexRepositoryCustomImpl implements PokedexRepositoryCustom {
 		if (type != null && !type.isEmpty()) {
 			Join<Pokemon, PokemonType> joinTypes = root.join("pokemonTypes", JoinType.INNER);
 			Join<PokemonType, Types> joinTypeName = joinTypes.join("type", JoinType.INNER);
-			filters.add(cb.lower(joinTypeName.get("name")).in(
-				    type.stream().map(String::toLowerCase).collect(Collectors.toList())
-					)
-);
+			filters.add(cb.lower(joinTypeName.get("name"))
+					.in(type.stream().map(String::toLowerCase).collect(Collectors.toList())));
 // name en este caso es el nombre del tipo(está en la
-																	// tabla type)
+			// tabla type)
 		}
 
 		if (generation != null && generation != 0) {
@@ -81,23 +90,27 @@ public class PokedexRepositoryCustomImpl implements PokedexRepositoryCustom {
 		// Filtro por región de origen (ManyToOne hacia Region)
 		// Se compara por nombre ignorando mayúsculas
 		if (regionOrigin != null && !regionOrigin.isEmpty()) {
-			Join<Pokemon, Region> joinRegionOrigin = root.join("regionOrigin", JoinType.INNER);
-			filters.add(cb.equal((joinRegionOrigin.get("id")), regionOrigin.toLowerCase()));
+		    Join<Pokemon, Region> joinRegionOrigin = root.join("regionOrigin", JoinType.INNER);
+		    filters.add(cb.equal(cb.lower(joinRegionOrigin.get("name")), regionOrigin.toLowerCase()));
 		}
 
 		if (regionApparitions != null && !regionApparitions.isEmpty()) {
-			Join<Pokemon, RegionApparitions> joinRegionApparitions = root.join("regionApparitions", JoinType.INNER);
-			Join<RegionApparitions, Region> joinRegion = joinRegionApparitions.join("region", JoinType.INNER);
-			filters.add(cb.equal((joinRegion.get("id")), regionApparitions.toLowerCase()));
+		    Join<Pokemon, RegionApparitions> joinRegionApparitions = root.join("regionApparitions", JoinType.INNER);
+		    Join<RegionApparitions, Region> joinRegion = joinRegionApparitions.join("region", JoinType.INNER);
+		    filters.add(cb.equal(cb.lower(joinRegion.get("name")), regionApparitions.toLowerCase()));
 		}
 
-		// Utilizar los filtros en el WHERE
-		// Convierte la lista de predicados a un array y los combina con AND para que se
-		// cumplan todos los criterios.
-		Predicate[] filtersList = filters.toArray(new Predicate[0]);
-		cQuery.select(root).where(cb.and(filtersList));
-		
-		//Ordena el filtro de pokes
+		if (filters.isEmpty()) {
+			cQuery.select(root);
+		} else {
+			// Utilizar los filtros en el WHERE
+			// Convierte la lista de predicados a un array y los combina con AND para que se
+			// cumplan todos los criterios.
+			Predicate[] filtersList = filters.toArray(new Predicate[0]);
+			cQuery.select(root).where(cb.and(filtersList));
+		}
+
+		// Ordena el filtro de pokes
 		cQuery.orderBy(cb.asc(root.get("id")));
 
 		// Devuelve una lista.
