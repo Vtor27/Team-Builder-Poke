@@ -76,12 +76,12 @@ const CardTypePoke = ({ types }: Props) => {
   };
 
   const stylesWind = {
-    typeContainStyle: "w-24 h-8 rounded-full justify-center ",
-    typeTextStyle: `text-lg font-bold text-center ${checkColorText(darkTypes, checkedType[0], checkedType[1])}`,
+    typeContainStyle: "w-20 h-8 rounded-full justify-center my-1",
+    typeTextStyle: `text-lg w-20 font-bold text-center ${checkColorText(darkTypes, checkedType[0], checkedType[1])}`,
   };
 
   return types.length === 2 ? (
-    <View className="flex-row w-full justify-around border">
+    <View className="flex-column ml-5 p-1">
       <View
         className={stylesWind.typeContainStyle}
         style={{ backgroundColor: typeColor[checkedType[0]] }}
@@ -96,7 +96,7 @@ const CardTypePoke = ({ types }: Props) => {
       </View>
     </View>
   ) : (
-    <View className="flex-row w-full justify-around border">
+    <View className="flex-column p-1 ml-5">
       <View
         className={stylesWind.typeContainStyle}
         style={{ backgroundColor: typeColor[checkedType[0]] }}
