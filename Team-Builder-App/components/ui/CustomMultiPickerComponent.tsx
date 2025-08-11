@@ -40,13 +40,13 @@ const CustomMultiPickerComponent = ({
   return (
     <View className="justify-center h-28 w-full my-1 border-b-2">
       <View className="flex-row items-center justify-between">
-        <Text className="text-2xl font-semibold mb-2 mr-10">{label}</Text>
+        <Text className="text-2xl text-white font-semibold mb-2 mr-10">{label}</Text>
         {selectedValues.length > 0 && (
           <Pressable
             onPress={() => setSelectedValues([])}
             className="h-12 w-12 justify-center items-center"
           >
-            <Image source={icons.deleteValue} className="h-12 w-12" />
+            <Image source={icons.deleteValue} className="h-10 w-10" />
           </Pressable>
         )}
       </View>

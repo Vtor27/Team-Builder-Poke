@@ -30,13 +30,13 @@ const CustomSinglePickerComponent = ({
   return (
     <View className="justify-center h-28 w-full border-b-2 my-1">
       <View className="flex-row items-center justify-between">
-        <Text className="text-2xl font-semibold mb-2 mr-10 ">{label}</Text>
+        <Text className="text-2xl text-white font-semibold mb-2 mr-10 ">{label}</Text>
         {selectedValue && (
           <Pressable
             onPress={() => setSelectedValue(null)}
             className=" h-12 w-12 justify- items-center"
           >
-            <Image source={icons.deleteValue} className="h-12 w-12" />
+            <Image source={icons.deleteValue} className="h-10 w-10" />
           </Pressable>
         )}
       </View>

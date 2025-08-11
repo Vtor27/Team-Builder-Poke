@@ -8,8 +8,8 @@ import {
   ScrollView,
 } from "react-native";
 import { icons } from "@/icons/icons";
-import CustomMultiPickerComponent from "./CustomMultiPickerComponent";
-import CustomSinglePickerComponent from "./CustomSinglePickerComponent";
+import CustomMultiPickerComponent from "../ui/CustomMultiPickerComponent";
+import CustomSinglePickerComponent from "../ui/CustomSinglePickerComponent";
 import { FiltersPokemon } from "@/types/types";
 
 type Props = {

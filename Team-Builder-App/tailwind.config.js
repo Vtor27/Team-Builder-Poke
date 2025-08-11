@@ -7,7 +7,13 @@ module.exports = {
     extend: {
       colors: {
         slate: require("tailwindcss/colors").slate,
+        lemonChiffon: "#E0CEBE",
+        cian: "#DBEAFE"
       },
+      borderRadius: {
+        "4xl": "2rem",
+        "5xl": "6rem",
+      }
     },
   },
   plugins: [],

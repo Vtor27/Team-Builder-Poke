@@ -1,27 +1,33 @@
 import React from "react";
 import { Pokemon } from "@/types/types";
-import { Image, Text, View } from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
+import TypePokeCard from "@/components/TypePokeCard";
 
 type Props = {
   pokemon: Pokemon;
   index: number;
+  onPress: () => void;
 };
 
-const CardPokedex = ({ pokemon, index }: Props) => {
+const CardPokedex = ({ pokemon, index, onPress }: Props) => {
   const indexFormat = String(index).padStart(3, "0");
 
   return (
-    <View className="h-20 w-11/12 flex-row bg-slate-600 my-2 mx-auto justify-center rounded-full">
-      <View className=" w-16 h-full justify-center border items-center">
-        <View className="w-14 h-14 rounded-full justify-center items-center bg-white">
-          <Image source={{ uri: pokemon.icon }} className="w-16 h-16" />
+    <TouchableOpacity onPress={onPress} className="w-[100%] min-h-[80%] bg-cian ml-0 rounded-r-full flex-row items-center px-4 " >
+      <View className="w-16 h-16 justify-center items-center mr-5 ml-8">
+        <View className="w-14 h-14 rounded-full ml-8 justify-center items-center bg-white border">
+          <Image source={{ uri: pokemon.icon }} className="w-14 h-14" />
         </View>
       </View>
-      <View className="flex-row items-center">
-        <Text className="text-white m">#{indexFormat}</Text>
-        <Text className="font-bold text">{pokemon.name}</Text>
+
+      <View className="flex-col ">
+      <View className="flex-1 flex-row items-center px-2">
+        <Text className="text-black mr-2 font-semibold text-xl">#{indexFormat} -</Text>
+        <Text className="font-bold text-black text-2xl">{pokemon.name}</Text>
       </View>
-    </View>
+        <TypePokeCard types={pokemon.types}/>
+      </View>
+    </TouchableOpacity>
   );
 };
 

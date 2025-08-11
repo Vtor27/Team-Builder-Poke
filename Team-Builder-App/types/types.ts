@@ -9,6 +9,24 @@ export interface Pokemon {
     icon: string;
 }
 
+export interface DetailedPokemon {
+    id: number;
+    name: string;
+    types: string[];
+    height: number;
+    weight: number;
+    hp: number;
+    attack: number;
+    defense: number;
+    special_attack: number;
+    special_defense: number;
+    speed: number;
+    generation: number;
+    regionOrigin: string;
+    image: string;
+
+}
+
 export interface FiltersPokemon {
     name?: string;
     type?: string[];

@@ -47,7 +47,7 @@ const typeColor: Record<PokemonType, string> = {
 
 // POSIBLE CAMBIO -> UTILIZAR LOS ICONOS DE LOS TIPOS EN VEZ DE LAS TARGETAS CON LOS TIPOS ESCRITOS
 
-const CardTypePoke = ({ types }: Props) => {
+const Card = ({ types }: Props) => {
   const checkedType = types
     .map((type) => type.toLocaleLowerCase())
     .filter((t): t is PokemonType => t in typeColor);
@@ -107,4 +107,4 @@ const CardTypePoke = ({ types }: Props) => {
   );
 };
 
-export default CardTypePoke;
+export default Card;

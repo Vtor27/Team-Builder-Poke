@@ -1,6 +1,8 @@
 import { FiltersPokemon } from "@/types/types";
 
-const API_URL = "http://192.168.1.135:8069/api/pokemon/filter?";
+// 192.168.1.134
+
+const API_URL = "http://192.168.1.105:8069/api/pokemon/filter?generation=1";
 
 export const getPokemonWithoutFilters = async () => {
   try {
@@ -25,17 +27,6 @@ export const getPokemonWhithFilters = async (filters: FiltersPokemon) => {
     if (filters.type) {
       filters.type.forEach((t) => filtersForUrl.append("type", t));
     }
-
-    // if (filters.type) {
-    //   if (filters.type.length === 1) {
-    //     const stringTypes = filters.type[0].toString();
-    //     filtersForUrl.append("type", stringTypes);
-    //   }
-    //   if (filters.type.length === 2) {
-    //     const stringTypes = filters.type[0] + filters.type[1];
-    //     filtersForUrl.append("type", stringTypes);
-    //   }
-    // }
 
     if (filters.name) filtersForUrl.append("name", filters.name);
     if (filters.regionApparitions)
