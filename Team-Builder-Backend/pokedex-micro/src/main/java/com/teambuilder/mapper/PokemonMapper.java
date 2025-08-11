@@ -20,6 +20,8 @@ public class PokemonMapper {
 		        .distinct() 											//Evita duplicados.
 		        .collect(Collectors.toList());
 
+		//FALTAN MAPEAR MÁS COSAS, COMO POR EJEMPLO LAS EVOLUCIONES, HABILIDADES...
+		
         return new PokeInfoCompleteDTO(
             poke.getId(),
             poke.getName(),
