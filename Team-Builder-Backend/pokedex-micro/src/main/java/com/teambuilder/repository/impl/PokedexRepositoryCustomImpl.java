@@ -1,4 +1,4 @@
-package com.teambuilder.repository;
+package com.teambuilder.repository.impl;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
@@ -15,13 +15,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.teambuilder.domain.Abilities;
 import com.teambuilder.domain.Generation;
 import com.teambuilder.domain.Pokemon;
+import com.teambuilder.domain.PokemonAbilities;
 import com.teambuilder.domain.PokemonType;
 import com.teambuilder.domain.Region;
-import com.teambuilder.domain.RegionApparitions;
 import com.teambuilder.domain.Tier;
 import com.teambuilder.domain.Types;
+import com.teambuilder.dto.AbilityDTO;
+import com.teambuilder.repository.PokedexRepositoryCustom;
 
 @Repository
 @Primary
@@ -31,7 +34,7 @@ public class PokedexRepositoryCustomImpl implements PokedexRepositoryCustom {
 	private EntityManager entityManager;
 
 	@Override
-	public List<Pokemon> advancedFilter(String name, List<String> type, String regionApparitions, Integer generation,
+	public List<Pokemon> advancedFilter(String name, List<String> type,Integer generation,
 			String tier, String regionOrigin) {
 
 		CriteriaBuilder cb = entityManager.getCriteriaBuilder(); // Constructor de la query
@@ -50,9 +53,9 @@ public class PokedexRepositoryCustomImpl implements PokedexRepositoryCustom {
 		if (tier == null || tier.isEmpty()) {
 		    root.fetch("tier", JoinType.LEFT);
 		}
-		if (regionApparitions == null || regionApparitions.isEmpty()) {
-		    root.fetch("regionApparitions", JoinType.LEFT);
-		}
+//		if (regionApparitions == null || regionApparitions.isEmpty()) {
+//		    root.fetch("regionApparitions", JoinType.LEFT);
+//		}
 		if (regionOrigin == null || regionOrigin.isEmpty()) {
 		    root.fetch("regionOrigin", JoinType.LEFT);
 		}
@@ -94,11 +97,11 @@ public class PokedexRepositoryCustomImpl implements PokedexRepositoryCustom {
 		    filters.add(cb.equal(cb.lower(joinRegionOrigin.get("name")), regionOrigin.toLowerCase()));
 		}
 
-		if (regionApparitions != null && !regionApparitions.isEmpty()) {
-		    Join<Pokemon, RegionApparitions> joinRegionApparitions = root.join("regionApparitions", JoinType.INNER);
-		    Join<RegionApparitions, Region> joinRegion = joinRegionApparitions.join("region", JoinType.INNER);
-		    filters.add(cb.equal(cb.lower(joinRegion.get("name")), regionApparitions.toLowerCase()));
-		}
+//		if (regionApparitions != null && !regionApparitions.isEmpty()) {
+//		    Join<Pokemon, RegionApparitions> joinRegionApparitions = root.join("regionApparitions", JoinType.INNER);
+//		    Join<RegionApparitions, Region> joinRegion = joinRegionApparitions.join("region", JoinType.INNER);
+//		    filters.add(cb.equal(cb.lower(joinRegion.get("name")), regionApparitions.toLowerCase()));
+//		}
 
 		if (filters.isEmpty()) {
 			cQuery.select(root);
@@ -126,10 +129,11 @@ public class PokedexRepositoryCustomImpl implements PokedexRepositoryCustom {
 
 		// Fetch a todos los campos para que traiga la info completa de los pokes
 		// filtrados aunque no se filtre por algún campo
+		// Se eliminan las regiones en las que aparece.
 		root.fetch("pokemonTypes", JoinType.LEFT);
 		root.fetch("generation", JoinType.LEFT);
 		root.fetch("tier", JoinType.LEFT);
-		root.fetch("regionApparitions", JoinType.LEFT);
+//		root.fetch("regionApparitions", JoinType.LEFT);
 		root.fetch("regionOrigin", JoinType.LEFT);
 
 		// Filtro por la ID
@@ -148,5 +152,29 @@ public class PokedexRepositoryCustomImpl implements PokedexRepositoryCustom {
 //		       "LEFT JOIN FETCH p.regionOrigin " +
 //		       "WHERE p.id = :id")
 //		Optional<Pokemon> findByIdConRelaciones(@Param("id") int id);
+
+	
+	public List<AbilityDTO> findAbilitiesByPokemonId(Integer pokemonId) {
+		CriteriaBuilder cb = entityManager.getCriteriaBuilder();
+		CriteriaQuery<AbilityDTO> cQuery = cb.createQuery(AbilityDTO.class);
+		
+		Root<PokemonAbilities> root = cQuery.from(PokemonAbilities.class);
+		Join<PokemonAbilities, Abilities> joinAbilities = root.join("abilities", JoinType.INNER);
+		
+		cQuery.select(cb.construct(
+			AbilityDTO.class, 
+			joinAbilities.get("id"),
+			joinAbilities.get("name"),
+			joinAbilities.get("effect"),
+			root.get("slot"),
+			root.get("isHidden")
+		));
+		
+		cQuery.where(cb.equal(root.get("pokemon").get("id"), pokemonId));
+		cQuery.orderBy(cb.asc(root.get("slot")));
+		
+		// TypedQuery<AbilityDTO> query = entityManager.createQuery(cQuery);
+		return entityManager.createQuery(cQuery).getResultList();
+	}
 
 }

@@ -1,9 +1,7 @@
 package com.teambuilder.domain;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
@@ -15,7 +13,7 @@ import lombok.ToString;
 @Table(name = "pokemon")
 @Getter
 @Setter
-@ToString(exclude = {"regionApparitions", "pokemonTypes"})
+@ToString(exclude = {"pokemonTypes"})
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Pokemon {
 	
@@ -34,9 +32,8 @@ public class Pokemon {
 	private Integer special_attack;
 	private Integer special_defense;
 	private Integer speed;
-//	private String nextEvolution;
-//	private String prevEvolution;
 	private String image;
+	private String category;
 	
 	@Column(name = "icon_mini")
 	private String icon;
@@ -47,8 +44,8 @@ public class Pokemon {
 	@JoinColumn(name = "region_origin")
 	private Region regionOrigin;
 	
-	@OneToMany(mappedBy = "pokemon", cascade = CascadeType.ALL, orphanRemoval = true)
-	private Set<RegionApparitions> regionApparitions = new HashSet<>();
+//	@OneToMany(mappedBy = "pokemon", cascade = CascadeType.ALL, orphanRemoval = true)
+//	private Set<RegionApparitions> regionApparitions = new HashSet<>();
 	
 	@ManyToOne
 	@JoinColumn(name = "generation_id")
@@ -61,4 +58,10 @@ public class Pokemon {
 	@OneToMany(mappedBy = "pokemon", cascade = CascadeType.ALL, orphanRemoval = true)
 	@OrderBy("slot ASC")
 	private List<PokemonType> pokemonTypes = new ArrayList<>();
+	
+	@OneToMany(mappedBy = "from_pokemon_id", fetch = FetchType.LAZY)
+	private List<Evolutions> evolutionTo = new ArrayList<>();
+	
+	@OneToMany(mappedBy = "to_pokemon_id", fetch = FetchType.LAZY)
+	private List<Evolutions> evolutionFrom = new ArrayList<>();
 }

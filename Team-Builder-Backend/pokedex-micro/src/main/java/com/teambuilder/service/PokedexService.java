@@ -7,7 +7,7 @@ import com.teambuilder.dto.PokedexItemDTO;
 
 public interface PokedexService {
 	
-	List<PokedexItemDTO> getFilteredPokemon(String name, List<String> type, String regionApparitions,
+	List<PokedexItemDTO> getFilteredPokemon(String name, List<String> type,
 			Integer generation, String tier, String regionOrigin);
 	
 	PokeInfoCompleteDTO getPokemonForId(int id);

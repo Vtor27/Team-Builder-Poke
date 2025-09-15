@@ -7,18 +7,15 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.teambuilder.dto.PokeInfoCompleteDTO;
-import com.teambuilder.dto.PokedexFiltersDTO;
 import com.teambuilder.dto.PokedexItemDTO;
 import com.teambuilder.service.PokedexService;
 
 import io.swagger.v3.oas.annotations.Operation;
-import org.springframework.web.bind.annotation.RequestBody;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 
@@ -42,12 +39,12 @@ public class PokemonController {
 	public ResponseEntity<List<PokedexItemDTO>> getPokemonWithFilters(
 			@RequestParam(name = "name", required = false) String name,
 		    @RequestParam(name = "type", required = false) List<String> type,
-		    @RequestParam(name = "regionApparitions", required = false) String regionApparitions,
+//		    @RequestParam(name = "regionApparitions", required = false) String regionApparitions,
 		    @RequestParam(name = "generation", required = false) Integer generation,
 		    @RequestParam(name = "tier", required = false) String tier,
 		    @RequestParam(name = "regionOrigin", required = false) String regionOrigin
 		) {
-		List<PokedexItemDTO> pokemonList = pokedexService.getFilteredPokemon(name, type, regionApparitions, generation, tier, regionOrigin);
+		List<PokedexItemDTO> pokemonList = pokedexService.getFilteredPokemon(name, type, generation, tier, regionOrigin);
 		
 		
 		

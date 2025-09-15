@@ -24,6 +24,7 @@ public class PokeInfoCompleteDTO {
 //	private String prevEvolution;
 	private String image;
 	private String icon;
+	private String category;
 	
 	private Integer tier;
 	private Integer generation;

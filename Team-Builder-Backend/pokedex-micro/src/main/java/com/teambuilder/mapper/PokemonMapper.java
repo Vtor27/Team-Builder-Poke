@@ -35,6 +35,7 @@ public class PokemonMapper {
             poke.getSpeed(),
             poke.getImage(),
             poke.getIcon(),
+            poke.getCategory(),
             poke.getTier() != null ? poke.getTier().getId() : 0,
             poke.getGeneration() != null ? poke.getGeneration().getId() : 0,
             poke.getRegionOrigin() != null ? poke.getRegionOrigin().getName() : "Desconocida",
