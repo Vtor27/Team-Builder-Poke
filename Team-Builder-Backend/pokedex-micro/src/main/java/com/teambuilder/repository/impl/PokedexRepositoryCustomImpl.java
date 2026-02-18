@@ -1,0 +1,180 @@
+package com.teambuilder.repository.impl;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Repository;
+
+import jakarta.persistence.*;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Join;
+import jakarta.persistence.criteria.JoinType;
+import jakarta.persistence.criteria.Root;
+import jakarta.persistence.criteria.Predicate;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import com.teambuilder.domain.Abilities;
+import com.teambuilder.domain.Generation;
+import com.teambuilder.domain.Pokemon;
+import com.teambuilder.domain.PokemonAbilities;
+import com.teambuilder.domain.PokemonType;
+import com.teambuilder.domain.Region;
+import com.teambuilder.domain.Tier;
+import com.teambuilder.domain.Types;
+import com.teambuilder.dto.AbilityDTO;
+import com.teambuilder.repository.PokedexRepositoryCustom;
+
+@Repository
+@Primary
+public class PokedexRepositoryCustomImpl implements PokedexRepositoryCustom {
+
+	@PersistenceContext
+	private EntityManager entityManager;
+
+	@Override
+	public List<Pokemon> advancedFilter(String name, List<String> type,Integer generation,
+			String tier, String regionOrigin) {
+
+		CriteriaBuilder cb = entityManager.getCriteriaBuilder(); // Constructor de la query
+		CriteriaQuery<Pokemon> cQuery = cb.createQuery(Pokemon.class); // Tipo de resultado
+
+		Root<Pokemon> root = cQuery.from(Pokemon.class); // Punto de partida (tabla principal)
+
+		// Fetch a todos los campos para que traiga la info completa de los pokes
+		// filtrados aunque no se filtre por algún campo
+		if (type == null || type.isEmpty()) {
+		    root.fetch("pokemonTypes", JoinType.LEFT);
+		}
+		if (generation == null || generation == 0) {
+		    root.fetch("generation", JoinType.LEFT);
+		}
+		if (tier == null || tier.isEmpty()) {
+		    root.fetch("tier", JoinType.LEFT);
+		}
+//		if (regionApparitions == null || regionApparitions.isEmpty()) {
+//		    root.fetch("regionApparitions", JoinType.LEFT);
+//		}
+		if (regionOrigin == null || regionOrigin.isEmpty()) {
+		    root.fetch("regionOrigin", JoinType.LEFT);
+		}
+
+
+		// Filtros -> Predicados
+		List<Predicate> filters = new ArrayList<>();
+
+		if (name != null && !name.isEmpty()) {
+			// Filtro por nombre (transforma todoaminusculas), buscando coincidencias
+			// parciales con LIKE:
+			// por ejemplo, si name = "chu", coincidirá con "Pikachu", "Raichu", etc.
+			filters.add(cb.like(cb.lower(root.get("name")), "%" + name.toLowerCase() + "%"));
+		}
+
+		if (type != null && !type.isEmpty()) {
+			Join<Pokemon, PokemonType> joinTypes = root.join("pokemonTypes", JoinType.INNER);
+			Join<PokemonType, Types> joinTypeName = joinTypes.join("type", JoinType.INNER);
+			filters.add(cb.lower(joinTypeName.get("name"))
+					.in(type.stream().map(String::toLowerCase).collect(Collectors.toList())));
+// name en este caso es el nombre del tipo(está en la
+			// tabla type)
+		}
+
+		if (generation != null && generation != 0) {
+			Join<Pokemon, Generation> joinGeneration = root.join("generation", JoinType.INNER);
+			filters.add(cb.equal(joinGeneration.get("number"), generation));
+		}
+
+		if (tier != null && !tier.isEmpty()) {
+			Join<Pokemon, Tier> joinTier = root.join("tier", JoinType.INNER);
+			filters.add(cb.equal(cb.lower(joinTier.get("name")), tier.toLowerCase()));
+		}
+
+		// Filtro por región de origen (ManyToOne hacia Region)
+		// Se compara por nombre ignorando mayúsculas
+		if (regionOrigin != null && !regionOrigin.isEmpty()) {
+		    Join<Pokemon, Region> joinRegionOrigin = root.join("regionOrigin", JoinType.INNER);
+		    filters.add(cb.equal(cb.lower(joinRegionOrigin.get("name")), regionOrigin.toLowerCase()));
+		}
+
+//		if (regionApparitions != null && !regionApparitions.isEmpty()) {
+//		    Join<Pokemon, RegionApparitions> joinRegionApparitions = root.join("regionApparitions", JoinType.INNER);
+//		    Join<RegionApparitions, Region> joinRegion = joinRegionApparitions.join("region", JoinType.INNER);
+//		    filters.add(cb.equal(cb.lower(joinRegion.get("name")), regionApparitions.toLowerCase()));
+//		}
+
+		if (filters.isEmpty()) {
+			cQuery.select(root);
+		} else {
+			// Utilizar los filtros en el WHERE
+			// Convierte la lista de predicados a un array y los combina con AND para que se
+			// cumplan todos los criterios.
+			Predicate[] filtersList = filters.toArray(new Predicate[0]);
+			cQuery.select(root).where(cb.and(filtersList));
+		}
+
+		// Ordena el filtro de pokes
+		cQuery.orderBy(cb.asc(root.get("id")));
+
+		// Devuelve una lista.
+		return entityManager.createQuery(cQuery).getResultList();
+	}
+
+	@Override
+	public Pokemon detailedPokemon(int id) {
+		CriteriaBuilder cb = entityManager.getCriteriaBuilder();
+		CriteriaQuery<Pokemon> cQuery = cb.createQuery(Pokemon.class);
+
+		Root<Pokemon> root = cQuery.from(Pokemon.class);
+
+		// Fetch a todos los campos para que traiga la info completa de los pokes
+		// filtrados aunque no se filtre por algún campo
+		// Se eliminan las regiones en las que aparece.
+		root.fetch("pokemonTypes", JoinType.LEFT);
+		root.fetch("generation", JoinType.LEFT);
+		root.fetch("tier", JoinType.LEFT);
+//		root.fetch("regionApparitions", JoinType.LEFT);
+		root.fetch("regionOrigin", JoinType.LEFT);
+
+		// Filtro por la ID
+		cQuery.select(root).where(cb.equal(root.get("id"), id));
+
+		return entityManager.createQuery(cQuery).getSingleResult();
+	}
+
+//	Prefiero utilizar Criteria a @Query porque puedo detectar los fallos más facilmente, es más facil de testear y se puede escalar más facilmente. 
+//	@Query("SELECT p FROM Pokemon p " +
+//		       "LEFT JOIN FETCH p.types " +
+//		       "LEFT JOIN FETCH p.generation " +
+//		       "LEFT JOIN FETCH p.tier " +
+//		       "LEFT JOIN FETCH p.region " +
+//		       "LEFT JOIN FETCH p.regionApparitions " +
+//		       "LEFT JOIN FETCH p.regionOrigin " +
+//		       "WHERE p.id = :id")
+//		Optional<Pokemon> findByIdConRelaciones(@Param("id") int id);
+
+	
+	public List<AbilityDTO> findAbilitiesByPokemonId(Integer pokemonId) {
+		CriteriaBuilder cb = entityManager.getCriteriaBuilder();
+		CriteriaQuery<AbilityDTO> cQuery = cb.createQuery(AbilityDTO.class);
+		
+		Root<PokemonAbilities> root = cQuery.from(PokemonAbilities.class);
+		Join<PokemonAbilities, Abilities> joinAbilities = root.join("abilities", JoinType.INNER);
+		
+		cQuery.select(cb.construct(
+			AbilityDTO.class, 
+			joinAbilities.get("id"),
+			joinAbilities.get("name"),
+			joinAbilities.get("effect"),
+			root.get("slot"),
+			root.get("isHidden")
+		));
+		
+		cQuery.where(cb.equal(root.get("pokemon").get("id"), pokemonId));
+		cQuery.orderBy(cb.asc(root.get("slot")));
+		
+		// TypedQuery<AbilityDTO> query = entityManager.createQuery(cQuery);
+		return entityManager.createQuery(cQuery).getResultList();
+	}
+
+}

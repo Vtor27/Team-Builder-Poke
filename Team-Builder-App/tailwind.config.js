@@ -4,7 +4,17 @@ module.exports = {
   content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
   presets: [require("nativewind/preset")],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        slate: require("tailwindcss/colors").slate,
+        lemonChiffon: "#E0CEBE",
+        cian: "#DBEAFE"
+      },
+      borderRadius: {
+        "4xl": "2rem",
+        "5xl": "6rem",
+      }
+    },
   },
   plugins: [],
 };

@@ -20,6 +20,8 @@ public class PokemonMapper {
 		        .distinct() 											//Evita duplicados.
 		        .collect(Collectors.toList());
 
+		//FALTAN MAPEAR MÁS COSAS, COMO POR EJEMPLO LAS EVOLUCIONES, HABILIDADES...
+		
         return new PokeInfoCompleteDTO(
             poke.getId(),
             poke.getName(),
@@ -33,6 +35,7 @@ public class PokemonMapper {
             poke.getSpeed(),
             poke.getImage(),
             poke.getIcon(),
+            poke.getCategory(),
             poke.getTier() != null ? poke.getTier().getId() : 0,
             poke.getGeneration() != null ? poke.getGeneration().getId() : 0,
             poke.getRegionOrigin() != null ? poke.getRegionOrigin().getName() : "Desconocida",
@@ -50,7 +53,9 @@ public class PokemonMapper {
 			return new PokedexItemDTO(
 				poke.getId(),
 				poke.getName(),
-				poke.getImage()
+				poke.getImage(),
+				poke.getIcon(),
+				types
 			);
 	}
 }

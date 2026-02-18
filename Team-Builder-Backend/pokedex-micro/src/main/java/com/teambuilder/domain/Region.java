@@ -1,8 +1,6 @@
 package com.teambuilder.domain;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
@@ -14,7 +12,7 @@ import lombok.ToString;
 @Table(name = "region")
 @Getter
 @Setter
-@ToString(exclude = {"originRegion", "regionApparitions"})
+@ToString(exclude = {"originRegion"})
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Region {
 	
@@ -25,8 +23,8 @@ public class Region {
 	@EqualsAndHashCode.Include
 	private String name;
 
-	@OneToMany(mappedBy = "region")
-	private Set<RegionApparitions> regionApparitions = new HashSet<>();
+//	@OneToMany(mappedBy = "region")
+//	private Set<RegionApparitions> regionApparitions = new HashSet<>();
 
 	@OneToMany(mappedBy = "regionOrigin")
 	private List<Pokemon> originRegion;

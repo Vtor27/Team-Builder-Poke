@@ -56,7 +56,7 @@ public class PokedexRepositoryCustomImplTest {
 		List<String> types = new ArrayList<>();
 		types.add("Fire");
 		
-		List<Pokemon> result = pokedexRepository.advancedFilter(null, types, null, null, null, null);
+		List<Pokemon> result = pokedexRepository.advancedFilter(null, types, null, null, null);
 		
 		assertNotNull(result);
 		assertFalse(result.isEmpty());
@@ -68,7 +68,7 @@ public class PokedexRepositoryCustomImplTest {
 	@Test
 	public void testFilterByNameAndRegion() {
 		System.out.println("|---------  FILTER BY NAME AND REGION -------|");
-		List<Pokemon> result = pokedexRepository.advancedFilter("chu", null, null, null, null, "Kanto");
+		List<Pokemon> result = pokedexRepository.advancedFilter("chu", null, null, null, "Kanto");
 		
 		assertNotNull(result);
 		result.forEach(poke -> System.out.println("Pokemon buscado: " + poke.getName()));
@@ -79,7 +79,7 @@ public class PokedexRepositoryCustomImplTest {
 	@Test
 	public void testFilterByGeneration() {
 		System.out.println("|---------  FILTER BY GENERATION -------|");
-		List<Pokemon> result = pokedexRepository.advancedFilter(null, null, null, 2, null, null);
+		List<Pokemon> result = pokedexRepository.advancedFilter(null, null, 2, null, null);
 		
 		assertNotNull(result);
 		assertFalse(result.isEmpty());
@@ -90,21 +90,22 @@ public class PokedexRepositoryCustomImplTest {
 		System.out.println("|--------------------------------------------------------------|");
 	}
 	
-	@Test
-	public void testFilterByRegionApparition() {
-		System.out.println("|---------  FILTER BY REGION APPARITION -------|");
-		List<Pokemon> result = pokedexRepository.advancedFilter(null, null, "Hoenn", null, null, null);
-		
-		assertNotNull(result);
-		result.forEach(poke -> System.out.println("Pokes: " + poke.getName()));
-		System.out.println("|--------------------------------------------------------------|");
-		System.out.println("|--------------------------------------------------------------|");
-	}
+//	Se elimina el filtro de las regiones en las que aparece el poke.
+//	@Test
+//	public void testFilterByRegionApparition() {
+//		System.out.println("|---------  FILTER BY REGION APPARITION -------|");
+//		List<Pokemon> result = pokedexRepository.advancedFilter(null, null, "Hoenn", null, null, null);
+//		
+//		assertNotNull(result);
+//		result.forEach(poke -> System.out.println("Pokes: " + poke.getName()));
+//		System.out.println("|--------------------------------------------------------------|");
+//		System.out.println("|--------------------------------------------------------------|");
+//	}
 	
 	@Test
 	public void testFilterWithoutfilters() {
 		System.out.println("|---------  NO FILTERS-------|");
-		List<Pokemon> result = pokedexRepository.advancedFilter(null, null, null, null, null, null);
+		List<Pokemon> result = pokedexRepository.advancedFilter(null, null,null, null, null);
 		
 		assertNotNull(result);
 		assertFalse(result.isEmpty());

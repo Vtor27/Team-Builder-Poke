@@ -20,14 +20,17 @@ async function insertarTiposPorPokemon() {
   let fallos = 0;
 
   try {
-    // Limpiar tabla primero si deseas evitar duplicados
+    // Limpiar tabla para evitar duplicados
     await pool.query("DELETE FROM pokemon_type");
 
     for (const pokemon of pokedex) {
       const id = pokemon.id;
       const tipos = pokemon.type;
 
-      for (const tipoNombre of tipos) {
+      for (let i = 0; i < tipos.length; i++) {
+        const tipoNombre = tipos[i];
+        const slot = i + 1; // 1 = principal, 2 = secundario
+
         // Buscar ID del tipo
         const res = await pool.query(
           "SELECT id FROM types WHERE nombre ILIKE $1",
@@ -42,13 +45,15 @@ async function insertarTiposPorPokemon() {
 
         const typeId = res.rows[0].id;
 
-        // Insertar relación
+        // Insertar relación con slot
         await pool.query(
-          "INSERT INTO pokemon_type (pokemon_id, type_id) VALUES ($1, $2)",
-          [id, typeId]
+          "INSERT INTO pokemon_type (pokemon_id, type_id, slot) VALUES ($1, $2, $3)",
+          [id, typeId, slot]
         );
 
-        console.log(`✅ ${pokemon.name.english} → ${tipoNombre}`);
+        console.log(
+          `✅ ${pokemon.name.english} → ${tipoNombre} (slot ${slot})`
+        );
         total++;
       }
     }
